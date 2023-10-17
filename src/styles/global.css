@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  height: auto;
+}
+
 .main-heading {
   color: #FFF;
   text-align: center;
@@ -35,6 +46,34 @@
   border-radius: 50px;
 }
 
+.main-paragraph {
+  color: #FFF;
+  text-align: center;
+  font-family: Vollkorn;
+  font-size: clamp(10.5px, 4.90644vw, 42px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.paragraph {
+  color: #2D3A53;
+  font-family: Open Sans;
+  font-size: clamp(8.5px, 3.97188vw, 34px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.focused {
+  color: #EB7F38;
+  font-family: Open Sans;
+  font-size: clamp(8.5px, 3.97188vw, 34px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .separator-container {
   width: 100%;
   height: auto;
@@ -46,6 +85,16 @@
 .icon-container {
   display: flex;
   align-items: center;
+}
+
+.wheat-subtext {
+  color: #EB7F38;
+  text-align: right;
+  font-family: Open Sans;
+  font-size: clamp(7px, 3.27096vw, 28px);
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .wheat-icon {
