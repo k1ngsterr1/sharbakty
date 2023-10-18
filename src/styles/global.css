@@ -123,6 +123,18 @@
   line-height: normal;
 }
 
+.white {
+  color: white !important;
+}
+
+.bg-blue {
+  background-color: #2D3A53 !important;
+}
+
+.bg-white {
+  background-color: white;
+}
+
 .wheat-icon {
   font-size: clamp(8px, 3.73824vw, 32px);
   color: #EB7F38;

@@ -6,6 +6,7 @@ import "./styles/home.css";
 import AboutScreen from "../screens/AboutScreen/AboutScreen";
 import MainScreen from "../screens/MainScreen/MainScreen";
 import CharacteristicScreen from "../screens/CharacteristicScreen/CharacteristicScreen";
+import ServicesScreen from "../screens/ServicesScreen/ServicesScreen";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <MainScreen />
       <AboutScreen />
       <CharacteristicScreen />
+      <ServicesScreen />
     </section>
   );
 };

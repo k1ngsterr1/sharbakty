@@ -7,7 +7,7 @@ const aboutImage = require("../../assets/mob_about.webp");
 
 const AboutScreen = () => {
   return (
-    <section className="about-screen mt32" id="about">
+    <section className="screen mt32" id="about">
       <div className="content">
         <Separator number="01" />
         <h2 className="heading-s left mt32">О Компания</h2>
