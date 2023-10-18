@@ -1,13 +1,13 @@
 import React from "react";
-import Header from "../../Header/Header";
+import Header from "../../components/Header/Header";
 
 import "./styles/main-screen.css";
 
 const MainScreen = () => {
   return (
-    <main className="main-screen">
+    <main className="main-screen" id="main">
       <Header></Header>
-      <main className="main-screen-content">
+      <div className="main-screen-content">
         <span className="main-subtext">Sharbakty Bidai Terminal</span>
         <h1 className="main-heading">
           Хранение, приемка и отгрузка зерновых культур
@@ -18,7 +18,7 @@ const MainScreen = () => {
           обработку вашего урожая. Ваше доверие — наша ответственность.
         </p>
         <button className="main-btn">Связаться с нами</button>
-      </main>
+      </div>
     </main>
   );
 };

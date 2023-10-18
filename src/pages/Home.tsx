@@ -1,14 +1,19 @@
 import React from "react";
 
 import "./styles/home.css";
-import Header from "../components/Header/Header";
-import MainScreen from "../components/screens/MainScreen/MainScreen";
+
+// Components
+import AboutScreen from "../screens/AboutScreen/AboutScreen";
+import MainScreen from "../screens/MainScreen/MainScreen";
+import CharacteristicScreen from "../screens/CharacteristicScreen/CharacteristicScreen";
 
 const Home = () => {
   return (
-    <div className="main-page">
+    <section className="main-page">
       <MainScreen />
-    </div>
+      <AboutScreen />
+      <CharacteristicScreen />
+    </section>
   );
 };
 

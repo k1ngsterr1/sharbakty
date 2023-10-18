@@ -1,0 +1,31 @@
+@import "../../../styles/variables"
+
+.btn-container
+    position: relative
+
+    .btn
+        width: clamp(120px,56.0736vw,480px)
+        height: clamp(21.5px,10.04652vw,86px)
+        color: #FFF
+        font-family: Vollkorn
+        font-size: $font17mob
+        font-style: normal
+        font-weight: 600
+        line-height: normal
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: $font17mob
+        background-color: $blue
+        cursor: pointer
+        z-index: 1
+        overflow: hidden
+
+    .pseudo
+        width: clamp(120px,56.0736vw,480px)
+        height: clamp(21.5px,10.04652vw,86px)
+        border: 2px solid $orange
+        z-index: -1
+        left: 9px
+        top: -9px
+        position: absolute
