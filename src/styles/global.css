@@ -132,7 +132,7 @@
 }
 
 .bg-white {
-  background-color: white;
+  background-color: white !important;
 }
 
 .wheat-icon {
@@ -170,12 +170,16 @@
 }
 
 .left {
-  float: left;
   text-align: left;
 }
 
 .right {
   text-align: right;
+}
+
+.center {
+  align-items: center;
+  text-align: center;
 }
 
 .mt8 {
