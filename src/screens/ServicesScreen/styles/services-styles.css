@@ -36,6 +36,31 @@
   font-size: clamp(12px, 5.60736vw, 48px);
 }
 
+.service-card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.service-card .service-card-name {
+  color: #FFF;
+  text-align: center;
+  font-family: Vollkorn;
+  font-size: clamp(14px, 6.54192vw, 56px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.service-card .price {
+  color: white;
+  font-family: Vollkorn;
+  font-size: clamp(11px, 5.14008vw, 44px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .links {
   width: 100%;
   height: auto;

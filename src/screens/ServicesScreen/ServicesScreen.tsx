@@ -12,15 +12,36 @@ interface LinkProps {
   marginTop?: string;
 }
 
+interface ServiceProps {
+  serviceName: string;
+  servicePrice: string;
+  marginTop: string;
+  imageSrc: string;
+}
+
 const ServiceLink: React.FC<LinkProps> = (props) => {
   return (
     <button className={`service-btn ${props.marginTop}`} onClick={props.url}>
       <span className="service-number">{props.number}</span>
-      <span className="btn-name">{props.linkName}</span>
+      <h3 className="btn-name">{props.linkName}</h3>
       <HiArrowUpRight className="arrow-icon" />
     </button>
   );
 };
+
+const ServicePrice: React.FC<ServiceProps> = (props) => {
+  return (
+    <div className={`service-card ${props.marginTop}`}>
+      <img className="service-img" src={props.imageSrc} alt="service-img" />
+      <h4 className="service-card-name mt16">{props.serviceName}</h4>
+      <span className="price mt8">{props.servicePrice}</span>
+    </div>
+  );
+};
+
+const service01 = require("../../assets/service_01.webp");
+const service02 = require("../../assets/service_02.webp");
+const service03 = require("../../assets/service_03.webp");
 
 const ServicesScreen = () => {
   const navigate = useNavigate();
@@ -65,6 +86,26 @@ const ServicesScreen = () => {
             url={navigate("/")}
             marginTop="mt32"
           ></ServiceLink>
+        </div>
+        <div className="services">
+          <ServicePrice
+            marginTop="mt64"
+            imageSrc={service01}
+            serviceName="Хранение + Приемка"
+            servicePrice="50.000тг / тонна"
+          ></ServicePrice>
+          <ServicePrice
+            marginTop="mt64"
+            imageSrc={service02}
+            serviceName="Сушка + Приемка"
+            servicePrice="50.000тг / тонна"
+          ></ServicePrice>
+          <ServicePrice
+            marginTop="mt64"
+            imageSrc={service03}
+            serviceName="Сушка + Приемка"
+            servicePrice="50.000тг / тонна"
+          ></ServicePrice>
         </div>
       </section>
     </div>
