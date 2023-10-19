@@ -59,6 +59,12 @@ const ServicesScreen = () => {
             url={navigate("/")}
             marginTop="mt32"
           ></ServiceLink>
+          <ServiceLink
+            number="4"
+            linkName="Сушка"
+            url={navigate("/")}
+            marginTop="mt32"
+          ></ServiceLink>
         </div>
       </section>
     </div>
