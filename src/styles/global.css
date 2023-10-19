@@ -206,6 +206,10 @@
   margin-top: clamp(64px, 29.90592vw, 256px);
 }
 
+.mb64 {
+  margin-bottom: clamp(32px, 14.95296vw, 128px);
+}
+
 .w80 {
   width: 80% !important;
 }

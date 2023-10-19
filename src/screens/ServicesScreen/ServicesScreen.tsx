@@ -16,6 +16,7 @@ interface ServiceProps {
   serviceName: string;
   servicePrice: string;
   marginTop: string;
+  marginBottom?: string;
   imageSrc: string;
 }
 
@@ -31,7 +32,7 @@ const ServiceLink: React.FC<LinkProps> = (props) => {
 
 const ServicePrice: React.FC<ServiceProps> = (props) => {
   return (
-    <div className={`service-card ${props.marginTop}`}>
+    <div className={`service-card ${props.marginTop} ${props.marginBottom}`}>
       <img className="service-img" src={props.imageSrc} alt="service-img" />
       <h4 className="service-card-name mt16">{props.serviceName}</h4>
       <span className="price mt8">{props.servicePrice}</span>
@@ -90,18 +91,21 @@ const ServicesScreen = () => {
         <div className="services">
           <ServicePrice
             marginTop="mt64"
+            marginBottom=""
             imageSrc={service01}
             serviceName="Хранение + Приемка"
             servicePrice="50.000тг / тонна"
           ></ServicePrice>
           <ServicePrice
             marginTop="mt64"
+            marginBottom=""
             imageSrc={service02}
             serviceName="Сушка + Приемка"
             servicePrice="50.000тг / тонна"
           ></ServicePrice>
           <ServicePrice
             marginTop="mt64"
+            marginBottom="mb64"
             imageSrc={service03}
             serviceName="Сушка + Приемка"
             servicePrice="50.000тг / тонна"
