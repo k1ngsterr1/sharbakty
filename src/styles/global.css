@@ -169,6 +169,13 @@
   line-height: normal;
 }
 
+.footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-color: #2D3A53;
+}
+
 .left {
   text-align: left;
 }

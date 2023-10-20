@@ -4,6 +4,8 @@ import Select from "react-select";
 
 import "./styles/form.css";
 
+const logo = require("../../assets/logo.svg").default;
+
 interface FormProps {
   marginTop: string;
 }
@@ -23,9 +25,9 @@ const Form = () => {
     control: (provided: any, state: any) => ({
       ...provided,
       width: "100%",
-      color: "$blue", // Replace with your color code if $blue is not directly accessible here.
+      color: "$blue",
       fontFamily: "Open Sans",
-      fontSize: "$font18mob", // Replace with your font size if $font18mob is not directly accessible here.
+      fontSize: "$font18mob",
       fontWeight: 300,
       border: "none",
       borderBottom: "2px solid #2D3A53",
@@ -36,7 +38,7 @@ const Form = () => {
     }),
     dropdownIndicator: (provided: any, state: any) => ({
       ...provided,
-      color: "$blue", // Replace with your color code.
+      color: "$blue",
     }),
     placeholder: (provided: any, state: any) => ({
       ...provided,
@@ -45,7 +47,8 @@ const Form = () => {
     }),
     singleValue: (provided: any, state: any) => ({
       ...provided,
-      color: "$blue", // Replace with your color code.
+      textAlign: "left",
+      color: "$blue",
     }),
   };
 
@@ -78,6 +81,17 @@ const Form = () => {
           <FormButton text="Отправить" marginTop="mt32"></FormButton>
         </div>
       </div>
+      <img src={logo} alt="logo" className="logo-colorful mt64" />
+      <p className="paragraph mt32">
+        Свяжитесь с Нами и Вместе Достигнем Успеха! В Шербакты Бидай мы всегда
+        открыты для общения и сотрудничества
+      </p>
+      <a href="tel:+77759932587" className="link mt32">
+        +7 (775) 993 25-87
+      </a>
+      <a href="mailto:info@example.com" className="link mt16">
+        info@example.com
+      </a>
     </form>
   );
 };

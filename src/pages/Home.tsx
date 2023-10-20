@@ -8,6 +8,7 @@ import MainScreen from "../screens/MainScreen/MainScreen";
 import CharacteristicScreen from "../screens/CharacteristicScreen/CharacteristicScreen";
 import ServicesScreen from "../screens/ServicesScreen/ServicesScreen";
 import ContactScreen from "../screens/ContactScreen/ContactScreen";
+import Footer from "../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <CharacteristicScreen />
       <ServicesScreen />
       <ContactScreen />
+      <Footer />
     </section>
   );
 };

@@ -3,7 +3,8 @@
 .form {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .form .form-mobile-content {
   width: 100%;
@@ -41,5 +42,18 @@
 .form .form-mobile-content .btn-center {
   display: flex;
   justify-content: center;
-  position: relative;
+}
+.form .logo-colorful {
+  width: clamp(104.5px, 48.83076vw, 418px);
+  height: clamp(104.5px, 48.83076vw, 418px);
+}
+.form .link {
+  color: #EB7F38;
+  text-align: right;
+  font-family: Open Sans;
+  font-size: clamp(9px, 4.20552vw, 36px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
 }/*# sourceMappingURL=form.css.map */
