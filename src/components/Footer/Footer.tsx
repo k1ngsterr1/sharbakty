@@ -7,7 +7,7 @@ const white_logo = require("../../assets/white_logo.svg").default;
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer mt64">
       <div className="content center">
         <img src={white_logo} className="white-logo mt48" alt="white-logo" />
         <nav className="links mt32">
@@ -24,6 +24,8 @@ const Footer = () => {
             Контакты
           </ScrollLink>
         </nav>
+        <figure className="separator-linez mt32"></figure>
+        <span className="all-rights mt32 ">2023 All right reserved.</span>
       </div>
     </footer>
   );
