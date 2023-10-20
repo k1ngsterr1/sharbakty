@@ -1,5 +1,6 @@
 import React from "react";
 import Separator from "../../components/Separator/Separator";
+import Form from "../../components/Form/Form";
 
 const ContactScreen = () => {
   return (
@@ -15,6 +16,7 @@ const ContactScreen = () => {
           Бидай. Наша команда с нетерпением ждет, чтобы обсудить, как мы можем
           помочь вашему урожаю процветать. Ваш успех — наша общая цель!
         </p>
+        <Form></Form>
       </main>
     </div>
   );

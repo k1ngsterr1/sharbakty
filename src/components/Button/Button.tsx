@@ -9,7 +9,12 @@ interface ButtonProps {
   marginTop: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ text, scroll, marginTop }) => {
+interface FormProps {
+  text: string;
+  marginTop: string;
+}
+
+export const Button: React.FC<ButtonProps> = ({ text, scroll, marginTop }) => {
   return (
     <div className={`btn-container ${marginTop}`}>
       <ScrollLink to={scroll} className="btn">
@@ -20,4 +25,11 @@ const Button: React.FC<ButtonProps> = ({ text, scroll, marginTop }) => {
   );
 };
 
-export default Button;
+export const FormButton: React.FC<FormProps> = ({ text, marginTop }) => {
+  return (
+    <div className={`btn-container ${marginTop}`}>
+      <button className="btn">{text}</button>
+      <figure className="pseudo"></figure>
+    </div>
+  );
+};

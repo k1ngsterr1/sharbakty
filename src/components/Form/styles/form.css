@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.form .form-mobile-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.form .form-mobile-content .form-input {
+  width: 100%;
+  height: auto;
+  color: #2D3A53;
+  font-family: Open Sans;
+  font-size: clamp(9px, 4.20552vw, 36px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border: none;
+  border-bottom: 2px solid #2D3A53;
+  padding-left: clamp(4px, 1.86912vw, 16px);
+  padding-bottom: clamp(4px, 1.86912vw, 16px);
+}
+.form .form-mobile-content .form-input:focus {
+  outline: none;
+}
+.form .form-mobile-content .select-styles {
+  width: 100%;
+  color: #2D3A53;
+  font-family: Open Sans;
+  font-size: clamp(9px, 4.20552vw, 36px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border: none !important;
+  outline: none !important;
+}/*# sourceMappingURL=form.css.map */

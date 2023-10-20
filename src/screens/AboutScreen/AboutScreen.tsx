@@ -1,6 +1,6 @@
 import React from "react";
 
-import Button from "../../components/Button/Button";
+import { Button } from "../../components/Button/Button";
 import Separator from "../../components/Separator/Separator";
 
 const aboutImage = require("../../assets/mob_about.webp");
