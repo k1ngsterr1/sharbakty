@@ -23,8 +23,10 @@
   border-bottom: 2px solid #2D3A53;
   padding-left: clamp(4px, 1.86912vw, 16px);
   padding-bottom: clamp(4px, 1.86912vw, 16px);
+  transition: 0.3s all;
 }
 .form .form-mobile-content .form-input:focus {
+  border-bottom: 2px solid #EB7F38;
   outline: none;
 }
 .form .form-mobile-content .select-styles {
@@ -35,6 +37,4 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  border: none !important;
-  outline: none !important;
 }/*# sourceMappingURL=form.css.map */
