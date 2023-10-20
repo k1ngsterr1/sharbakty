@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FormButton } from "../Button/Button";
+import { FormButton, Button } from "../Button/Button";
 import Select from "react-select";
 
 import "./styles/form.css";
@@ -74,7 +74,9 @@ const Form = () => {
           className="select-styles mt32"
           styles={customStyles}
         ></Select>
-        <FormButton marginTop="mt32" text="Отправить"></FormButton>
+        <div className="btn-center">
+          <FormButton text="Отправить" marginTop="mt32"></FormButton>
+        </div>
       </div>
     </form>
   );

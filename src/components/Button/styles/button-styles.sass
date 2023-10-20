@@ -2,6 +2,7 @@
 
 .btn-container
     position: relative
+    z-index: 1
 
     .btn
         width: clamp(120px,56.0736vw,480px)
@@ -18,8 +19,9 @@
         font-size: $font17mob
         background-color: $blue
         cursor: pointer
-        z-index: 1
+        z-index: 0
         overflow: hidden
+        border: none
 
     .pseudo
         width: clamp(120px,56.0736vw,480px)
