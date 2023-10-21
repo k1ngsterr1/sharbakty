@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import Home from "./pages/HomePage/Home";
+import ContainPage from "./pages/ContainPage/ContainPage";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -23,6 +24,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/services/containing" element={<ContainPage />}></Route>
       </Routes>
     </Router>
   );

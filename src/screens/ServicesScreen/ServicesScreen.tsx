@@ -66,7 +66,7 @@ const ServicesScreen = () => {
           <ServiceLink
             number="1"
             linkName="Хранение"
-            url={navigate("/")}
+            url={() => navigate("/services/containing")}
             marginTop="mt64"
           ></ServiceLink>
           <ServiceLink
