@@ -5,23 +5,25 @@
   z-index: 0;
 }
 .btn-container .btn {
-  width: clamp(120px, 56.0736vw, 480px);
-  height: clamp(21.5px, 10.04652vw, 86px);
-  color: #FFF;
-  font-family: Vollkorn;
-  font-size: clamp(8.5px, 3.97188vw, 34px);
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: clamp(8.5px, 3.97188vw, 34px);
-  background-color: #2D3A53;
-  cursor: pointer;
-  z-index: 0;
-  overflow: hidden;
-  border: none;
+  width: clamp(120px, 56.0736vw, 480px) !important;
+  height: clamp(21.5px, 10.04652vw, 86px) !important;
+  color: #FFF !important;
+  font-family: Vollkorn !important;
+  font-size: clamp(8.5px, 3.97188vw, 34px) !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: normal !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: clamp(8.5px, 3.97188vw, 34px) !important;
+  background-color: #2D3A53 !important;
+  cursor: pointer !important;
+  z-index: 0 !important;
+  overflow: hidden !important;
+  border: none !important;
+  border-radius: 0 !important;
+  text-transform: none !important;
 }
 .btn-container .pseudo {
   width: clamp(120px, 56.0736vw, 480px);

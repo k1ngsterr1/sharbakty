@@ -32,6 +32,7 @@ const Form = () => {
       border: "none",
       borderBottom: "2px solid #2D3A53",
       boxShadow: "none",
+      borderRadius: "0px",
       "&:hover": {
         borderColor: "none",
       },

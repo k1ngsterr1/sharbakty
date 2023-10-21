@@ -20,7 +20,7 @@ const AboutScreen = () => {
           предприятиям и фермерам эффективное хранение и транспортировку их
           урожаев.
         </p>
-        <Button marginTop="mt48" text="Связаться с нами" scroll="contacts" />
+        <Button marginTop="mt48" text="Связаться с нами" scroll="contact" />
       </div>
       <img src={aboutImage} className="img mt48" alt="image" />
     </section>

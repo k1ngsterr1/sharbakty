@@ -6,7 +6,7 @@ import {
   useLocation,
 } from "react-router-dom";
 
-import Home from "./pages/Home";
+import Home from "./pages/HomePage/Home";
 
 function ScrollToTop() {
   const { pathname } = useLocation();

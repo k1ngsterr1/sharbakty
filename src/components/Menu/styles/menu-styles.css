@@ -7,12 +7,43 @@
   background-color: #2D3A53;
 }
 .menu .menu-content {
+  width: 70%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 .menu .hamburger-btn {
   position: absolute;
   right: clamp(8px, 3.73824vw, 32px);
   top: clamp(24px, 12.3vw, 96px);
+}
+.menu .logo {
+  width: 150px;
+  height: 150px;
+}
+.menu .separator {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+.menu .links {
+  display: flex;
+  align-items: center;
+}
+.menu .links .drp-link, .menu .links .menu-link {
+  color: white !important;
+  text-align: center;
+  font-family: Vollkorn;
+  font-size: clamp(16px, 7.47648vw, 64px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background-color: transparent;
+  background: none;
+}
+.menu .links .send {
+  color: #EB7F38 !important;
 }/*# sourceMappingURL=menu-styles.css.map */

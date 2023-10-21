@@ -4,7 +4,7 @@ import Form from "../../components/Form/Form";
 
 const ContactScreen = () => {
   return (
-    <div className="screen bg-white">
+    <div className="screen bg-white" id="contact">
       <main className="content center">
         <Separator number="04" marginTop="mt64" colorBg="bg-blue" />
         <div className="heading-container center mt32">

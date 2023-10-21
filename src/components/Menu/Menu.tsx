@@ -4,9 +4,13 @@ import Hamburger from "hamburger-react";
 
 import { Link, useNavigate } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import { Slide } from "react-awesome-reveal";
-import { MDBAccordion, MDBAccordionItem } from "mdb-react-ui-kit";
-
+import { Fade, Slide } from "react-awesome-reveal";
+import {
+  MDBDropdown,
+  MDBDropdownMenu,
+  MDBDropdownToggle,
+  MDBDropdownItem,
+} from "mdb-react-ui-kit";
 import "./styles/menu-styles.css";
 
 interface MenuProps {
@@ -33,21 +37,46 @@ const Menu: React.FC<MenuProps> = ({ isMenuOpen, toggleMenu }) => {
           <div className="hamburger-btn">
             <Hamburger toggled={true} toggle={closeMenu} color="white" />
           </div>
+          <img src={logo} alt="logo" className="logo" />
+          <figure className="separator mt32"></figure>
           <nav className="links">
-            <ScrollLink className="menu-link" to="main">
-              Главная
-            </ScrollLink>
-            <ScrollLink className="menu-link" to="main">
-              О нас
-            </ScrollLink>
-            <MDBAccordion initialActive={1}>
-              <MDBAccordionItem collapseId={1} headerTitle="Услуги">
-                <Link to="/">АB</Link>
-              </MDBAccordionItem>
-            </MDBAccordion>
-            <ScrollLink classID="menu-link" to="main">
-              Отправить заявку
-            </ScrollLink>
+            <Fade direction="right" className="">
+              <ScrollLink className="menu-link" to="main" onClick={closeMenu}>
+                Главная
+              </ScrollLink>
+            </Fade>
+            <Fade direction="left" delay={200} className="mt16">
+              <ScrollLink
+                className="menu-link mt16"
+                to="about"
+                onClick={closeMenu}
+              >
+                О нас
+              </ScrollLink>
+            </Fade>
+            <Fade direction="right" delay={300} className="mt16">
+              <ScrollLink className="menu-link " to="char" onClick={closeMenu}>
+                Характеристики
+              </ScrollLink>
+            </Fade>
+            <Fade direction="left" delay={400} className="mt16">
+              <ScrollLink
+                className="menu-link "
+                to="services"
+                onClick={closeMenu}
+              >
+                Услуги
+              </ScrollLink>
+            </Fade>
+            <Fade direction="right" delay={500} className="mt16">
+              <ScrollLink
+                className="menu-link  send"
+                to="contact"
+                onClick={closeMenu}
+              >
+                Отправить заявку
+              </ScrollLink>
+            </Fade>
           </nav>
         </div>
       </Slide>

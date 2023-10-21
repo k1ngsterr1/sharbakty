@@ -6,7 +6,7 @@ const charImg = require("../../assets/mob_char.webp");
 const CharacteristicScreen = () => {
   return (
     <div className="screen">
-      <section className="content">
+      <section className="content" id="char">
         <Separator number="02" marginTop="mt32"></Separator>
         <div className="heading-container mt32">
           <span className="wheat-subtext">Sharbakty Bidai Terminal</span>

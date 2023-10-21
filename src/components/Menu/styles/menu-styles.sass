@@ -7,11 +7,42 @@
     background-color: $blue
 
     .menu-content
+        width: 70%
+        height: 80%
         display: flex
         flex-direction: column
         align-items: center
+        justify-content: center
+        margin: auto
 
     .hamburger-btn
         position: absolute
         right: $m16mob
         top: clamp(24px, 12.3vw, 96px)
+
+    .logo
+        width: 150px
+        height: 150px
+
+    .separator
+        width: 100%
+        height: 1px
+        background-color: $white
+
+    .links
+        display: flex
+        align-items: center
+
+        .drp-link, .menu-link
+            color: $white !important
+            text-align: center
+            font-family: Vollkorn
+            font-size: $font32mob
+            font-style: normal
+            font-weight: 600
+            line-height: normal
+            background-color: transparent
+            background: none
+
+        .send
+            color: $orange !important

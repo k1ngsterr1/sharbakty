@@ -3,6 +3,7 @@ import Header from "../../components/Header/Header";
 import Menu from "../../components/Menu/Menu";
 
 import "./styles/main-screen.css";
+import { Link as ScrollLink } from "react-scroll";
 
 const MainScreen = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -25,7 +26,9 @@ const MainScreen = () => {
           стандартами качества мы гарантируем оптимальное хранение, сушку и
           обработку вашего урожая. Ваше доверие — наша ответственность.
         </p>
-        <button className="main-btn">Связаться с нами</button>
+        <ScrollLink className="main-btn" to="contact">
+          Связаться с нами
+        </ScrollLink>
       </div>
     </main>
   );
