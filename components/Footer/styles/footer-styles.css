@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+.white-logo {
+  width: clamp(90.5px, 42.28884vw, 362px);
+  height: clamp(90.5px, 42.28884vw, 362px);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.links .nav-link {
+  color: #FFF;
+  font-family: Vollkorn;
+  font-size: clamp(12px, 5.60736vw, 48px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.separator-linez {
+  width: 100%;
+  height: 1px;
+  background-color: white !important;
+  background: white !important;
+}
+
+.all-rights {
+  color: #FFF;
+  text-align: right;
+  font-family: Open Sans;
+  font-size: clamp(8px, 3.73824vw, 32px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: clamp(8px, 3.73824vw, 32px);
+}/*# sourceMappingURL=footer-styles.css.map */

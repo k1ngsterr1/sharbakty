@@ -1,0 +1,197 @@
+@import "./variables"
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+#root
+    width: 100%
+    height: auto
+
+.screen
+    width: 100%
+    height: auto
+    display: flex
+    flex-direction: column
+
+.heading-container
+    display: flex
+    flex-direction: column
+
+.items-end
+    align-items: flex-end
+
+.items-start
+    align-items: start
+
+.main-heading
+    color: #FFF
+    text-align: center
+    font-family: Vollkorn
+    font-size: $font36mob
+    font-style: normal
+    font-weight: 700
+    line-height: normal
+
+.main-subtext
+    color: #FFF
+    text-align: center
+    font-family: Vollkorn
+    font-size: $font20mob
+    font-style: normal
+    font-weight: 500
+    line-height: normal
+
+.main-btn
+    width: clamp(135.5px,63.31643999999999vw,542px)
+    height: clamp(28.5px,13.31748vw,114px)
+    color: #FFF
+    text-align: center
+    font-family: Vollkorn
+    font-size: $font20mob
+    font-style: normal
+    font-weight: 600
+    line-height: normal
+    background: transparent
+    border: 2px solid $white
+    border-radius: 50px
+
+.main-paragraph
+    color: #FFF
+    text-align: center
+    font-family: Vollkorn
+    font-size: $font21mob
+    font-style: normal
+    font-weight: 500
+    line-height: normal
+
+.paragraph
+    width: 80%
+    color: $blue
+    font-family: Open Sans
+    font-size: $font17mob
+    font-style: normal
+    font-weight: 300
+    line-height: normal
+
+.focused
+    color: $orange
+    font-family: Open Sans
+    font-size: $font17mob
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+
+.separator-container
+    width: 100%
+    height: auto
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    .separator
+        width: 100%
+        height: 1px
+        background-color: $blue
+
+.icon-container
+    display: flex
+    align-items: center
+
+.wheat-subtext
+    color: $orange
+    text-align: right
+    font-family: Open Sans
+    font-size: $font14mob
+    font-style: italic
+    font-weight: 400
+    line-height: normal
+
+.white
+    color: $white !important
+
+.bg-blue
+    background-color: $blue !important
+
+.bg-white
+    background-color: $white !important
+
+.wheat-icon
+    font-size: $m16mob
+    color: $orange
+
+.numeric
+    color: $blue
+    text-align: center
+    font-family: Vollkorn
+    font-size: $font20mob
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    margin-left: $m8mob
+
+.content
+    width: 90%
+    height: auto
+    margin: auto
+    display: flex
+    flex-direction: column
+    margin: auto
+
+.heading-s
+    color: $blue
+    font-family: Vollkorn
+    font-size: $font32mob
+    font-style: normal
+    font-weight: 500
+    line-height: normal
+
+.footer
+    width: 100%
+    height: auto
+    display: flex
+    background-color: $blue
+
+.left
+    text-align: left
+
+.right
+    text-align: right
+
+.center
+    align-items: center
+    text-align: center
+
+.mt8
+    margin-top: $m8mob
+
+.mt16
+    margin-top: $m16mob
+
+.mt32
+    margin-top: $m32mob
+
+.mt48
+    margin-top: clamp(24px,11.21472vw,96px)
+
+.mt64
+    margin-top: $m64mob
+
+.mt128
+    margin-top: $m128mob
+
+.mb64
+    margin-bottom: $m64mob
+
+.w80
+    width: 80% !important
+
+.w90
+    width: 90% !important
+
+.w95
+    width: 95% !important
+
+.w100
+    width: 100% !important

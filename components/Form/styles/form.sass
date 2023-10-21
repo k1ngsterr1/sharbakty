@@ -1,0 +1,56 @@
+@import "../../../styles/variables"
+
+.form
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    .form-mobile-content
+        width: 100%
+        display: flex
+        flex-direction: column
+
+        .form-input
+            width: 100%
+            height: auto
+            color: $blue
+            font-family: Open Sans
+            font-size: $font18mob
+            font-style: normal
+            font-weight: 300
+            line-height: normal
+            border: none
+            border-bottom: 2px solid $blue
+            padding-left: $m8mob
+            padding-bottom: $m8mob
+            transition: 0.3s all
+            &:focus
+                border-bottom: 2px solid $orange
+                outline: none
+
+        .select-styles
+            width: 100%
+            color: $blue
+            font-family: Open Sans
+            font-size: $font18mob
+            font-style: normal
+            font-weight: 300
+            line-height: normal
+
+        .btn-center
+            display: flex
+            justify-content: center
+
+    .logo-colorful
+        width: clamp(104.5px,48.83076vw,418px)
+        height: clamp(104.5px,48.83076vw,418px)
+    .link
+        color: $orange
+        text-align: right
+        font-family: Open Sans
+        font-size: $font18mob
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        text-decoration: none
