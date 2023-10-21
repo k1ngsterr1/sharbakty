@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import Hamburger from "hamburger-react";
 
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { Slide } from "react-awesome-reveal";
 import { MDBAccordion, MDBAccordionItem } from "mdb-react-ui-kit";
@@ -41,10 +41,9 @@ const Menu: React.FC<MenuProps> = ({ isMenuOpen, toggleMenu }) => {
               О нас
             </ScrollLink>
             <MDBAccordion initialActive={1}>
-              <MDBAccordionItem
-                collapseId={1}
-                headerTitle="Услуги"
-              ></MDBAccordionItem>
+              <MDBAccordionItem collapseId={1} headerTitle="Услуги">
+                <Link to="/">А</Link>
+              </MDBAccordionItem>
             </MDBAccordion>
             <ScrollLink classID="menu-link" to="main">
               Отправить заявку
