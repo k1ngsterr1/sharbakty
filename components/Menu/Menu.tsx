@@ -42,7 +42,7 @@ const Menu: React.FC<MenuProps> = ({ isMenuOpen, toggleMenu }) => {
             </ScrollLink>
             <MDBAccordion initialActive={1}>
               <MDBAccordionItem collapseId={1} headerTitle="Услуги">
-                <Link to="/">А</Link>
+                <Link to="/">АB</Link>
               </MDBAccordionItem>
             </MDBAccordion>
             <ScrollLink classID="menu-link" to="main">
