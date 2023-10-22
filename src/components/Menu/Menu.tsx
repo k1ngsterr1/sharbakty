@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 import Hamburger from "hamburger-react";
-
 import { Link, useNavigate } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { Fade, Slide } from "react-awesome-reveal";
@@ -24,11 +23,20 @@ interface MenuProps {
 const logo = require("../../assets/white_logo.svg").default;
 
 const Menu: React.FC<MenuProps> = ({ isMenuOpen, toggleMenu }) => {
+  const navigate = useNavigate();
+
   const closeMenu = () => {
     if (isMenuOpen) {
       toggleMenu();
     }
   };
+
+  function navigateToMain() {
+    navigate("/");
+    if (isMenuOpen) {
+      toggleMenu();
+    }
+  }
 
   return (
     <>
@@ -37,7 +45,12 @@ const Menu: React.FC<MenuProps> = ({ isMenuOpen, toggleMenu }) => {
           <div className="hamburger-btn">
             <Hamburger toggled={true} toggle={closeMenu} color="white" />
           </div>
-          <img src={logo} alt="logo" className="logo" />
+          <img
+            src={logo}
+            alt="logo"
+            className="logo"
+            onClick={navigateToMain}
+          />
           <figure className="separator mt32"></figure>
           <nav className="links">
             <Fade direction="right" className="">

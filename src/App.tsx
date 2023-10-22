@@ -8,6 +8,9 @@ import {
 
 import Home from "./pages/HomePage/Home";
 import ContainPage from "./pages/ContainPage/ContainPage";
+import AcceptancePage from "./pages/AcceptancePage/AcceptancePage";
+import UnloadingPage from "./pages/UnloadingPage/UnloadingPage";
+import DrainPage from "./pages/DrainPage/DrainPage";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -22,9 +25,13 @@ function ScrollToTop() {
 const App = () => {
   return (
     <Router>
+      <ScrollToTop></ScrollToTop>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services/containing" element={<ContainPage />}></Route>
+        <Route path="/services/acceptance" element={<AcceptancePage />}></Route>
+        <Route path="/services/unloading" element={<UnloadingPage />}></Route>
+        <Route path="/services/drain" element={<DrainPage />}></Route>
       </Routes>
     </Router>
   );
