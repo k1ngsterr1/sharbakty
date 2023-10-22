@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-.btn-c {
+.c-header {
+  width: 90%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin: auto;
+  margin-top: clamp(16px, 7.47648vw, 64px);
 }
-
-.about-text {
-  color: #2D3A53;
-  font-family: Open Sans;
-  font-size: clamp(8px, 3.73824vw, 32px);
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-}/*# sourceMappingURL=contain-styles.css.map */
+.c-header .c-logo {
+  width: clamp(42px, 19.62576vw, 168px);
+  height: clamp(42px, 19.62576vw, 168px);
+}/*# sourceMappingURL=colorful-styles.css.map */
