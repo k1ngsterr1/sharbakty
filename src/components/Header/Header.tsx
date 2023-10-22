@@ -3,6 +3,7 @@ import Hamburger from "hamburger-react";
 import Menu from "../Menu/Menu";
 
 import "./styles/header.css";
+import { Link as ScrollLink } from "react-scroll";
 
 interface HeaderProps {
   isMenuOpen?: any;
@@ -27,11 +28,28 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
   return (
     <header className="header">
       <img src={logo} alt="logo" className="logo" />
-      <Hamburger
-        color="white"
-        toggled={isMenuOpen ? true : false}
-        onToggle={toggleMenu}
-      ></Hamburger>
+      <nav className="nav">
+        <ScrollLink className="link" to="">
+          Главная
+        </ScrollLink>
+        <ScrollLink className="link ml32" to="">
+          О нас
+        </ScrollLink>
+        <ScrollLink className="link ml32" to="">
+          Услуги
+        </ScrollLink>
+        <ScrollLink className="link ml32" to="">
+          Контакты
+        </ScrollLink>
+      </nav>
+      <button className="contact-btn">Связаться с нами</button>
+      <div className="hamburger-btn">
+        <Hamburger
+          color="white"
+          toggled={isMenuOpen ? true : false}
+          onToggle={toggleMenu}
+        ></Hamburger>
+      </div>
     </header>
   );
 };

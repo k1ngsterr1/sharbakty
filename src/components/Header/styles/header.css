@@ -11,4 +11,57 @@
 .header .logo {
   width: clamp(42px, 19.62576vw, 168px);
   height: clamp(42px, 19.62576vw, 168px);
+}
+.header .nav {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    width: 86.4583333333%;
+  }
+  .header .nav {
+    display: flex;
+    align-items: center;
+  }
+  .header .nav .link {
+    color: white;
+    font-family: Vollkorn;
+    font-size: clamp(12px, 1.24992vw, 48px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+    transition: 0.3s all;
+  }
+  .header .nav .link:hover {
+    font-size: clamp(13.5px, 1.40616vw, 54px);
+    color: #EB7F38;
+  }
+  .header .nav .ml32 {
+    margin-left: clamp(16px, 1.66656vw, 64px);
+  }
+  .header .contact-btn {
+    width: clamp(107px, 11.14512vw, 428px);
+    height: clamp(25px, 2.604vw, 100px);
+    color: #FFF;
+    font-family: Vollkorn;
+    font-size: clamp(9.5px, 0.98952vw, 38px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 50px;
+    border: 2px solid white;
+    background-color: transparent;
+    transition: 0.3s all;
+  }
+  .header .contact-btn:hover {
+    width: clamp(120px, 12.4992vw, 480px);
+    height: clamp(30px, 3.1248vw, 120px);
+    color: #EB7F38;
+    border: 2px solid #EB7F38;
+  }
+  .header .hamburger-btn {
+    display: none;
+  }
 }/*# sourceMappingURL=header.css.map */
