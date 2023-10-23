@@ -82,17 +82,46 @@ const Form = () => {
           <FormButton text="Отправить" marginTop="mt32"></FormButton>
         </div>
       </div>
-      <img src={logo} alt="logo" className="logo-colorful mt64" />
-      <p className="paragraph mt32">
-        Свяжитесь с Нами и Вместе Достигнем Успеха! В Шербакты Бидай мы всегда
-        открыты для общения и сотрудничества
-      </p>
-      <a href="tel:+77759932587" className="link mt32">
-        +7 (775) 993 25-87
-      </a>
-      <a href="mailto:info@example.com" className="link mt16">
-        info@example.com
-      </a>
+      <div className="form-pc-content">
+        <div className="form-row">
+          {" "}
+          <input
+            type="text"
+            className="form-input"
+            name="name_value"
+            id="name"
+            placeholder="Ваше Имя"
+            required={true}
+          />
+          <input
+            type="text"
+            className="form-input l"
+            name="name_value"
+            id="name"
+            placeholder="Ваш Телефон"
+            required={true}
+          />
+        </div>
+        <Select
+          options={options}
+          placeholder="Выберите услугу"
+          className="select-styles mt64"
+          styles={customStyles}
+        ></Select>
+      </div>
+      <div className="mob-contacts">
+        <img src={logo} alt="logo" className="logo-colorful mt64" />
+        <p className="paragraph mt32">
+          Свяжитесь с Нами и Вместе Достигнем Успеха! В Шербакты Бидай мы всегда
+          открыты для общения и сотрудничества
+        </p>
+        <a href="tel:+77759932587" className="link mt32">
+          +7 (775) 993 25-87
+        </a>
+        <a href="mailto:info@example.com" className="link mt16">
+          info@example.com
+        </a>
+      </div>
     </form>
   );
 };

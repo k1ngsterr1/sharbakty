@@ -175,6 +175,12 @@ const ServicesScreen = () => {
               servicePrice="50.000тг / тонна"
             ></ServicePrice>
           </div>
+          <div className="discount-container">
+            <span className="discount-text">
+              При покупке всех услуг действует скидка в x%,
+            </span>
+            <span className="discount-price">250.000гт</span>
+          </div>
         </div>
       </section>
     </div>

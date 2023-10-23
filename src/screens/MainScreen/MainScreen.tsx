@@ -26,7 +26,7 @@ const MainScreen = () => {
           стандартами качества мы гарантируем оптимальное хранение, сушку и
           обработку вашего урожая. Ваше доверие — наша ответственность.
         </p>
-        <ScrollLink className="main-btn" to="contact">
+        <ScrollLink className="main-btn" to="contact" smooth>
           Связаться с нами
         </ScrollLink>
       </div>

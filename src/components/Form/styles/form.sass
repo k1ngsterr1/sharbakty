@@ -42,15 +42,63 @@
             display: flex
             justify-content: center
 
-    .logo-colorful
-        width: clamp(104.5px,48.83076vw,418px)
-        height: clamp(104.5px,48.83076vw,418px)
-    .link
-        color: $orange
-        text-align: right
-        font-family: Open Sans
-        font-size: $font18mob
-        font-style: normal
-        font-weight: 400
-        line-height: normal
-        text-decoration: none
+    .mob-contacts
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        .logo-colorful
+            width: clamp(104.5px,48.83076vw,418px)
+            height: clamp(104.5px,48.83076vw,418px)
+
+        .link
+            color: $orange
+            text-align: right
+            font-family: Open Sans
+            font-size: $font18mob
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            text-decoration: none
+
+@media screen and  (min-width: 1024px)
+
+    .form
+        display: flex
+        flex-direction: row
+
+        .form-mobile-content
+            display: none !important
+
+        .mob-contacts
+            display: none
+
+        .form-pc-content
+            display: flex
+            flex-direction: column
+
+            .form-row
+                display: flex
+                flex-direction: row
+                align-items: center
+
+                .form-input
+                    width: clamp(220px,22.915200000000002vw,880px)
+                    height: auto
+                    color: $blue
+                    font-family: Open Sans
+                    font-size: clamp(9px,0.93744vw,36px)
+                    font-style: normal
+                    font-weight: 300
+                    line-height: normal
+                    border: none
+                    border-bottom: 2px solid $blue
+                    padding-left: $m8
+                    padding-bottom: $m8
+                    transition: 0.3s all
+                    &:focus
+                        border-bottom: 2px solid $orange
+                        outline: none
+
+                .l
+                    margin-left: $m32
