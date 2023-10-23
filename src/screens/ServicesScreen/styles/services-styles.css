@@ -67,4 +67,90 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .service-btn {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: none;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    transition: 0.3s all;
+    cursor: pointer;
+  }
+  .service-btn:hover {
+    background-color: #EB7F38;
+  }
+  .service-btn:hover .service-number, .service-btn:hover .btn-name, .service-btn:hover .arrow-icon {
+    color: #2D3A53;
+  }
+  .service-btn .service-number {
+    color: #FFF;
+    text-align: center;
+    font-family: Vollkorn;
+    font-size: clamp(25px, 2.604vw, 100px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: clamp(4px, 0.41664vw, 16px);
+    margin-left: clamp(8px, 0.83328vw, 32px);
+  }
+  .service-btn .btn-name {
+    color: white;
+    text-align: center;
+    font-family: Vollkorn;
+    font-size: clamp(14px, 1.45824vw, 56px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: clamp(4px, 0.41664vw, 16px);
+  }
+  .service-btn .arrow-icon {
+    color: white;
+    font-size: clamp(16px, 1.66656vw, 64px);
+    margin-right: clamp(8px, 0.83328vw, 32px);
+  }
+  .links {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .services {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .services .service-card {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .services .service-card .service-card-name {
+    color: #FFF;
+    text-align: center;
+    font-family: Vollkorn;
+    font-size: clamp(17px, 1.77072vw, 68px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .services .service-card .price {
+    color: white;
+    font-family: Vollkorn;
+    font-size: clamp(13.5px, 1.40616vw, 54px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }/*# sourceMappingURL=services-styles.css.map */

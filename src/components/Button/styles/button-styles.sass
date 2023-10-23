@@ -33,3 +33,43 @@
         left: 9px
         top: -9px
         position: absolute
+
+@media screen and  (min-width: 1024px)
+
+    .btn-container
+        position: relative
+        z-index: 0
+
+        .btn
+            width: clamp(153px,15.93648vw,612px) !important
+            height: clamp(27px,2.81232vw,108px) !important
+            color: #FFF !important
+            font-family: Vollkorn !important
+            font-size: clamp(12px,1.24992vw,48px) !important
+            font-style: normal !important
+            font-weight: 600 !important
+            line-height: normal !important
+            display: flex !important
+            align-items: center !important
+            justify-content: center !important
+            background-color: $blue !important
+            cursor: pointer !important
+            z-index: 0 !important
+            overflow: hidden !important
+            border: none !important
+            border-radius: 0 !important
+            text-transform: none !important
+            transition: 0.3s all
+
+        .pseudo
+            width: clamp(153px,15.93648vw,612px) !important
+            height: clamp(27px,2.81232vw,108px) !important
+            border: 2px solid $orange
+            z-index: -1
+            left: 9px
+            top: -9px
+            position: absolute
+
+        .btn
+            &:hover
+                background-color: $orange !important

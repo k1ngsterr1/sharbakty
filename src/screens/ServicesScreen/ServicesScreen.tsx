@@ -48,7 +48,7 @@ const ServicesScreen = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="screen bg-blue">
+    <div className="screen bg-blue mt64">
       <section className="content">
         <Separator
           number="03"
@@ -110,6 +110,71 @@ const ServicesScreen = () => {
             serviceName="Сушка + Приемка"
             servicePrice="50.000тг / тонна"
           ></ServicePrice>
+        </div>
+      </section>
+      <section className="content-pc mt64">
+        <Separator
+          number="03"
+          marginTop="mt64"
+          colorBg="bg-white"
+          color="white"
+        ></Separator>
+        <div className="screen-content column mt64">
+          <div className="heading-container center mt32">
+            <h2 className="heading-s white">Наши услуги</h2>
+            <span className="wheat-subtext white mt8">
+              Sharbakty Bidai Terminal
+            </span>
+          </div>
+          <div className="links">
+            <ServiceLink
+              number="1"
+              linkName="Хранение"
+              url={() => navigate("/services/containing")}
+              marginTop="mt64"
+            ></ServiceLink>
+            <ServiceLink
+              number="2"
+              linkName="Приемка"
+              url={navigate("/")}
+              marginTop="mt32"
+            ></ServiceLink>
+            <ServiceLink
+              number="3"
+              linkName="Отгрузка"
+              url={navigate("/")}
+              marginTop="mt32"
+            ></ServiceLink>
+            <ServiceLink
+              number="4"
+              linkName="Сушка"
+              url={navigate("/")}
+              marginTop="mt32"
+            ></ServiceLink>
+          </div>
+          <div className="services">
+            <ServicePrice
+              marginTop="mt64"
+              marginBottom=""
+              imageSrc={service01}
+              serviceName="Хранение + Приемка"
+              servicePrice="50.000тг / тонна"
+            ></ServicePrice>
+            <ServicePrice
+              marginTop="mt64"
+              marginBottom=""
+              imageSrc={service02}
+              serviceName="Сушка + Приемка"
+              servicePrice="50.000тг / тонна"
+            ></ServicePrice>
+            <ServicePrice
+              marginTop="mt64"
+              marginBottom="mb64"
+              imageSrc={service03}
+              serviceName="Сушка + Приемка"
+              servicePrice="50.000тг / тонна"
+            ></ServicePrice>
+          </div>
         </div>
       </section>
     </div>

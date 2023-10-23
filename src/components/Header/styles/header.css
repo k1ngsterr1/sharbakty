@@ -8,6 +8,9 @@
   justify-content: space-between;
   margin-top: clamp(16px, 7.47648vw, 64px);
 }
+.header .contact-btn {
+  display: none;
+}
 .header .logo {
   width: clamp(42px, 19.62576vw, 168px);
   height: clamp(42px, 19.62576vw, 168px);
@@ -48,6 +51,9 @@
     font-family: Vollkorn;
     font-size: clamp(9.5px, 0.98952vw, 38px);
     font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 600;
     line-height: normal;
     border-radius: 50px;

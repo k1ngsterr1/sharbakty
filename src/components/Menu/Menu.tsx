@@ -4,12 +4,7 @@ import Hamburger from "hamburger-react";
 import { Link, useNavigate } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { Fade, Slide } from "react-awesome-reveal";
-import {
-  MDBDropdown,
-  MDBDropdownMenu,
-  MDBDropdownToggle,
-  MDBDropdownItem,
-} from "mdb-react-ui-kit";
+
 import "./styles/menu-styles.css";
 
 interface MenuProps {
