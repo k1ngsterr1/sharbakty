@@ -2,6 +2,7 @@ import React from "react";
 import Separator from "../../components/Separator/Separator";
 
 import "./styles/char-styles.css";
+import { Fade } from "react-awesome-reveal";
 
 const charImg = require("../../assets/mob_char.webp");
 const charPcImg = require("../../assets/service-2-pc.webp");
@@ -43,16 +44,22 @@ const CharacteristicScreen = () => {
       <section className="content-pc">
         <Separator number="02" marginTop="mt32"></Separator>
         <div className="screen-content space-between items-center">
-          <img className="img-pc" src={charPcImg} alt="char-image"></img>
+          <Fade direction="left" triggerOnce={true}>
+            <img className="img-pc" src={charPcImg} alt="char-image"></img>
+          </Fade>
           <div className="text-content items-end">
             <div className="heading-container mt32">
-              <span className="wheat-subtext left">
-                Sharbakty Bidai Terminal
-              </span>
-              <h2 className="heading-s  mt8">Основные характеристики</h2>
+              <Fade direction="right" delay={200} triggerOnce={true}>
+                <span className="wheat-subtext left">
+                  Sharbakty Bidai Terminal
+                </span>
+              </Fade>
+              <Fade direction="right" delay={300} triggerOnce={true}>
+                <h2 className="heading-s  mt8">Основные характеристики</h2>
+              </Fade>
             </div>
             <p className="paragraph mt64 w50">
-              <span className="focused">Современное оборудование:</span>{" "}
+              <span className="focused">Современное оборудование:</span>
               Элеватор оборудован современными механизмами и системами контроля,
               что обеспечивает высокую эффективность и надежность процессов
               хранения и обработки сельскохозяйственной продукции.

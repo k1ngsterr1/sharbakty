@@ -33,6 +33,17 @@
   margin-top: clamp(16px, 7.47648vw, 64px);
 }
 
+.anim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.anim-2 {
+  width: 60%;
+  display: inline-block !important;
+}
+
 #root {
   width: 100%;
   height: auto;
