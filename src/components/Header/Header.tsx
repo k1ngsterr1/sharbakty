@@ -29,16 +29,16 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
     <header className="header">
       <img src={logo} alt="logo" className="logo" />
       <nav className="nav">
-        <ScrollLink className="link" to="">
+        <ScrollLink className="link" to="main" smooth>
           Главная
         </ScrollLink>
-        <ScrollLink className="link ml32" to="">
+        <ScrollLink className="link ml32" to="about" smooth>
           О нас
         </ScrollLink>
-        <ScrollLink className="link ml32" to="">
+        <ScrollLink className="link ml32" to="services" smooth>
           Услуги
         </ScrollLink>
-        <ScrollLink className="link ml32" to="">
+        <ScrollLink className="link ml32" to="contact" smooth>
           Контакты
         </ScrollLink>
       </nav>

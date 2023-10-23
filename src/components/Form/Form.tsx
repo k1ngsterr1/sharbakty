@@ -108,6 +108,7 @@ const Form = () => {
           className="select-styles mt64"
           styles={customStyles}
         ></Select>
+        <FormButton text="Отправить" marginTop="mt64"></FormButton>
       </div>
       <div className="mob-contacts">
         <img src={logo} alt="logo" className="logo-colorful mt64" />
