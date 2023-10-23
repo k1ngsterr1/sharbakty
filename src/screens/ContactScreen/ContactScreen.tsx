@@ -22,13 +22,13 @@ const ContactScreen = () => {
         <Separator number="04" marginTop="mt64" colorBg="bg-blue" />
         <div className="screen-content">
           <div className="text-content">
-            <div className="heading-container center mt32">
-              <h2 className="heading-s ">Контакты</h2>
-              <span className="wheat-subtext  mt8">
+            <div className="heading-container left mt32">
+              <h2 className="heading-s left">Контакты</h2>
+              <span className="wheat-subtext left mt8">
                 Sharbakty Bidai Terminal
               </span>
             </div>
-            <p className="paragraph mt32 center">
+            <p className="paragraph mt32 left w60">
               Заполните форму ниже, и станьте частью успешной истории Шербакты
               Бидай. Наша команда с нетерпением ждет, чтобы обсудить, как мы
               можем помочь вашему урожаю процветать. Ваш успех — наша общая

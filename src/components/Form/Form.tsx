@@ -54,7 +54,7 @@ const Form = () => {
   };
 
   return (
-    <form className="form mt48">
+    <form className="form">
       <div className="form-mobile-content">
         <input
           type="text"
@@ -112,6 +112,20 @@ const Form = () => {
       <div className="mob-contacts">
         <img src={logo} alt="logo" className="logo-colorful mt64" />
         <p className="paragraph mt32">
+          Свяжитесь с Нами и Вместе Достигнем Успеха! В Шербакты Бидай мы всегда
+          открыты для общения и сотрудничества
+        </p>
+        <a href="tel:+77759932587" className="link mt32">
+          +7 (775) 993 25-87
+        </a>
+        <a href="mailto:info@example.com" className="link mt16">
+          info@example.com
+        </a>
+      </div>
+      <div className="pc-contacts">
+        {" "}
+        <img src={logo} alt="logo" className="logo-colorful mt64" />
+        <p className="paragraph right mt32">
           Свяжитесь с Нами и Вместе Достигнем Успеха! В Шербакты Бидай мы всегда
           открыты для общения и сотрудничества
         </p>
