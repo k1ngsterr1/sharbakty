@@ -112,7 +112,7 @@ const Form = () => {
       </div>
       <div className="mob-contacts">
         <img src={logo} alt="logo" className="logo-colorful mt64" />
-        <p className="paragraph mt32">
+        <p className="paragraph center mt32">
           Свяжитесь с Нами и Вместе Достигнем Успеха! В Шербакты Бидай мы всегда
           открыты для общения и сотрудничества
         </p>

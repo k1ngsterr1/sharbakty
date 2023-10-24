@@ -300,26 +300,38 @@
                 margin: auto
                 margin-top: $m32mob
 
+    .mt8
+        margin-top: clamp(4px,0.41664vw,16px) !important
+
     .mt16
-        margin-top: $m16
+        margin-top: $m16 !important
 
     .mb16
         margin-bottom: $m16
 
     .mt32
-        margin-top: $m32
+        margin-top: $m32 !important
+
+    .mt45
+        margin-top: clamp(22.5px,2.3436vw,90px) !important
 
     .mb32
-        margin-bottom: $m32
+        margin-bottom: $m32 !important
 
     .mt48
-        margin-top: clamp(24px,11.21472vw,96px)
+        margin-top: clamp(24px,11.21472vw,96px) !important
 
     .mt64
-        margin-top: $m64
+        margin-top: $m64 !important
+
+    .mt90
+        margin-top: clamp(45px,4.6872vw,180px) !important
 
     .mt128
-        margin-top: $m128
+        margin-top: $m128 !important
+
+    .mt300
+        margin-top: clamp(250px,26.04vw,1000px) !important
 
     .mb64
         margin-bottom: $m64
@@ -357,6 +369,14 @@
         font-weight: 500
         line-height: normal
 
+    .main-subtext-small
+        color: $orange
+        font-family: Open Sans
+        font-size: clamp(9px,0.93744vw,36px)
+        font-style: italic
+        font-weight: 400
+        line-height: normal
+
     .main-btn
         display: none !important
 
@@ -383,7 +403,7 @@
         width: 80%
         color: $blue
         font-family: Open Sans
-        font-size: $font21
+        font-size: clamp(9px,0.93744vw,36px)
         font-style: normal
         font-weight: 300
         line-height: normal

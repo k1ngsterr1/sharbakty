@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import Hamburger from "hamburger-react";
 import Menu from "../Menu/Menu";
+import { Link as ScrollLink } from "react-scroll";
 
 import "./styles/header.css";
-import { Link as ScrollLink } from "react-scroll";
 
 interface HeaderProps {
   isMenuOpen?: any;
@@ -42,7 +42,9 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
           Контакты
         </ScrollLink>
       </nav>
-      <button className="contact-btn">Связаться с нами</button>
+      <ScrollLink className="contact-btn" to="contact" smooth>
+        Связаться с нами
+      </ScrollLink>
       <div className="hamburger-btn">
         <Hamburger
           color="white"

@@ -36,7 +36,7 @@ const AcceptancePage = () => {
           <Button text="Заказать" scroll="contacts" marginTop="mt48" />
         </div>
       </main>
-      <img src={service} className="mt64" alt="service" />
+      <img src={service} className="img mt64" alt="service" />
       <div className="content mt32">
         <figure className="separator bg-blue"></figure>
         <span className="about-text">Об услуге</span>

@@ -9,8 +9,8 @@ const Footer = () => {
   return (
     <footer className="footer mt64">
       <div className="content center">
-        <img src={white_logo} className="white-logo" alt="white-logo" />
-        <nav className="links">
+        <img src={white_logo} className="white-logo mt64" alt="white-logo" />
+        <nav className="links mt16">
           <ScrollLink className="nav-link mt16" to="main">
             Главная
           </ScrollLink>
@@ -24,8 +24,8 @@ const Footer = () => {
             Контакты
           </ScrollLink>
         </nav>
-        <figure className="separator-linez"></figure>
-        <span className="all-rights">2023 All right reserved.</span>
+        <figure className="separator-linez mt16"></figure>
+        <span className="all-rights mt16">2023 All right reserved.</span>
       </div>
       <div className="content-pc">
         <div className="upper-row mt32">

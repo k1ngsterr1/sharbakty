@@ -60,6 +60,7 @@
     border: 2px solid white;
     background-color: transparent;
     transition: 0.3s all;
+    cursor: pointer;
   }
   .header .contact-btn:hover {
     width: clamp(120px, 12.4992vw, 480px);

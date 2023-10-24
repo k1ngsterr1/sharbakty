@@ -36,12 +36,12 @@ const UnloadingPage = () => {
           <Button text="Заказать" scroll="contacts" marginTop="mt48" />
         </div>
       </main>
-      <img src={service} className="mt64" alt="service" />
-      <div className="content mt32">
+      <img src={service} className="img mt64" alt="service" />
+      <div className="content mt32 ">
         <figure className="separator bg-blue"></figure>
         <span className="about-text">Об услуге</span>
         <h3 className="heading-t mt32">Приемка зерна</h3>
-        <p className="paragraph">
+        <p className="paragraph  mb32">
           Оптимальное Хранение Зерна с Шербакты Бидай: Наши современные
           зернохранилища, оснащенные передовыми системами контроля климата,
           обеспечивают идеальные условия для вашего урожая, сохраняя его
@@ -56,7 +56,7 @@ const UnloadingPage = () => {
         <figure className="separator bg-blue mt16"></figure>
         <span className="about-text">Об услуге</span>
         <h3 className="heading-t mt32">Цены</h3>
-        <p className="paragraph">
+        <p className="paragraph  mb32">
           Оптимальное Хранение Зерна с Шербакты Бидай: Наши современные
           зернохранилища, оснащенные передовыми системами контроля климата,
           обеспечивают идеальные условия для вашего урожая, сохраняя его

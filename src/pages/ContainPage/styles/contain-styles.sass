@@ -10,3 +10,107 @@
     font-style: normal
     font-weight: 300
     line-height: normal
+    margin-top: $m8mob
+
+.img
+    width: 100%
+    height: clamp(250px,116.82vw,1000px)
+
+.img-pc
+    display: none
+
+@media screen and  (min-width: 1024px)
+
+    .img
+        display: none
+
+    .img-pc
+        position: absolute
+        width: clamp(475px,49.476vw,1900px)
+        height: clamp(400px,41.664vw,1600px)
+        top: clamp(100px,10.416vw,400px)
+        right: 0
+        display: flex !important
+
+    .content-pc-service
+        position: relative
+        width: 86.45833333333333% !important
+        display: flex
+        flex-direction: row !important
+        justify-content: space-between !important
+        text-align: left
+        margin: auto
+
+        .btn-c
+            margin: 0
+
+        .fixed-nav
+            margin-top: 0px
+            position: sticky
+            display: flex
+            flex-direction: column
+            border-top: 1px solid $blue
+
+            .text
+                color: $blue
+                font-family: Open Sans
+                font-size: $font18
+                font-style: normal
+                font-weight: 300
+                line-height: normal
+                margin-top: $m8
+
+            .nav-links
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+
+                .blue-link
+                    color: $blue
+                    font-family: Open Sans
+                    font-size: $font18
+                    font-style: normal
+                    font-weight: 600
+                    line-height: normal
+                    cursor: pointer
+                    transition: 0.3s all
+                    &:hover
+                        color: $orange
+
+        .service-content
+            width: 75%
+            display: flex
+            flex-direction: column
+            border-top: 1px solid $blue
+
+            .text
+                color: $blue
+                font-family: Open Sans
+                font-size: $font18
+                font-style: normal
+                font-weight: 300
+                line-height: normal
+                margin-top: $m8
+
+            .service-content-tab, .service-content-tab-border
+                width: 100%
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                margin-top: $m32
+
+                .heading-third
+                    color: $orange
+                    font-family: Vollkorn
+                    font-size: clamp(15px,1.5624vw,60px) !important
+                    font-style: normal
+                    font-weight: 600
+                    line-height: normal
+
+            .separator-line
+                width: 100%
+                height: 1px
+                background-color: $blue
+
+            .service-content-tab-border
+                border-top: 1px solid $blue

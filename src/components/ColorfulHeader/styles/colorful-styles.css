@@ -12,4 +12,68 @@
 .c-header .c-logo {
   width: clamp(42px, 19.62576vw, 168px);
   height: clamp(42px, 19.62576vw, 168px);
+}
+.c-header .hamburger-button {
+  display: flex;
+}
+
+@media screen and (min-width: 1024px) {
+  .hamburger-button {
+    display: none !important;
+  }
+  .c-header {
+    width: 86.4583333333% !important;
+  }
+  .c-header .nav {
+    display: flex;
+    align-items: center;
+  }
+  .c-header .nav .link {
+    color: #EB7F38;
+    font-family: Vollkorn;
+    font-size: clamp(12px, 1.24992vw, 48px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+    transition: 0.3s all;
+  }
+  .c-header .nav .link:hover {
+    font-size: clamp(13.5px, 1.40616vw, 54px);
+    color: #2D3A53;
+  }
+  .c-header .nav .ml32 {
+    margin-left: clamp(16px, 1.66656vw, 64px);
+  }
+  .c-header .c-logo {
+    width: clamp(82px, 8.54112vw, 328px);
+    height: clamp(80px, 8.3328vw, 320px);
+  }
+  .c-header .contact-btn {
+    width: clamp(107px, 11.14512vw, 428px);
+    height: clamp(25px, 2.604vw, 100px);
+    color: #EB7F38;
+    font-family: Vollkorn;
+    font-size: clamp(9.5px, 0.98952vw, 38px);
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 50px;
+    border: 2px solid #EB7F38;
+    background-color: transparent;
+    transition: 0.3s all;
+    cursor: pointer;
+  }
+  .c-header .contact-btn:hover {
+    width: clamp(120px, 12.4992vw, 480px);
+    height: clamp(30px, 3.1248vw, 120px);
+    color: #2D3A53;
+    border: 2px solid #2D3A53;
+  }
+  .c-header .hamburger-btn {
+    display: none;
+  }
 }/*# sourceMappingURL=colorful-styles.css.map */

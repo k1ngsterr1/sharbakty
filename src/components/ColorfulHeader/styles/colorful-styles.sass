@@ -13,3 +13,64 @@
     .c-logo
         width: clamp(42px,19.62576vw,168px)
         height: clamp(42px,19.62576vw,168px)
+
+    .hamburger-button
+        display: flex
+
+@media screen and  (min-width: 1024px)
+
+    .hamburger-button
+        display: none !important
+
+    .c-header
+        width: 86.45833333333333% !important
+
+        .nav
+            display: flex
+            align-items: center
+
+            .link
+                color: $orange
+                font-family: Vollkorn
+                font-size: clamp(12px,1.24992vw,48px)
+                font-style: normal
+                font-weight: 500
+                line-height: normal
+                cursor: pointer
+                transition: 0.3s all
+                &:hover
+                    font-size: clamp(13.5px,1.40616vw,54px)
+                    color: $blue
+
+            .ml32
+                margin-left: $m32
+
+        .c-logo
+            width: clamp(82px,8.54112vw,328px)
+            height: clamp(80px,8.3328vw,320px)
+
+        .contact-btn
+            width: clamp(107px,11.14512vw,428px)
+            height: clamp(25px,2.604vw,100px)
+            color: $orange
+            font-family: Vollkorn
+            font-size: clamp(9.5px,0.9895200000000001vw,38px)
+            font-style: normal
+            display: flex
+            align-items: center
+            justify-content: center
+            font-weight: 600
+            line-height: normal
+            border-radius: 50px
+            border: 2px solid $orange
+            background-color: transparent
+            transition: 0.3s all
+            cursor: pointer
+            &:hover
+                width: clamp(120px,12.4992vw,480px)
+                height: clamp(30px,3.1248vw,120px)
+                color: $blue
+                border: 2px solid $blue
+
+        .hamburger-btn
+            display: none
