@@ -82,7 +82,7 @@ const Form = () => {
   };
 
   return (
-    <div className="form">
+    <div className="form" id="contact">
       <form className="form-mobile-content" ref={form} onSubmit={sendEmail}>
         <input
           type="text"

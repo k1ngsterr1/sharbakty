@@ -33,3 +33,18 @@ export const FormButton: React.FC<FormProps> = ({ text, marginTop }) => {
     </div>
   );
 };
+
+export const ColorfulButton: React.FC<ButtonProps> = ({
+  text,
+  scroll,
+  marginTop,
+}) => {
+  return (
+    <div className={`c-btn-container ${marginTop}`}>
+      <ScrollLink to={scroll} className="c-btn" smooth={true}>
+        {text}
+      </ScrollLink>
+      <figure className="pseudo"></figure>
+    </div>
+  );
+};

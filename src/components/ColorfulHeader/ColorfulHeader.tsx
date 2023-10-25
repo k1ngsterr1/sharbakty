@@ -6,6 +6,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { useNavigate } from "react-router-dom";
 
 import "./styles/colorful-styles.css";
+import { ColorfulButton } from "../Button/Button";
 
 interface HeaderProps {
   isMenuOpen?: any;
@@ -72,7 +73,11 @@ const ColorfulHeader: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
           Контакты
         </ScrollLink>
       </nav>
-      <button className="contact-btn">Связаться с нами</button>
+      <ColorfulButton
+        text="Связаться с нами"
+        marginTop="mt0"
+        scroll="contact"
+      />
     </header>
   );
 };

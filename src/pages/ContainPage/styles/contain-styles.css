@@ -38,6 +38,7 @@
     top: clamp(100px, 10.416vw, 400px);
     right: 0;
     display: flex !important;
+    z-index: -1 !important;
   }
   .content-pc-service {
     position: relative;
