@@ -35,8 +35,10 @@ const ServicePrice: React.FC<ServiceProps> = (props) => {
   return (
     <div className={`service-card ${props.marginTop} ${props.marginBottom}`}>
       <img className="service-img" src={props.imageSrc} alt="service-img" />
-      <h4 className="service-card-name mt16">{props.serviceName}</h4>
-      <span className="price mt8">{props.servicePrice}</span>
+      <div className="service-price-container">
+        <h4 className="service-card-name mt16">{props.serviceName}</h4>
+        <span className="price mt8">{props.servicePrice}</span>
+      </div>
     </div>
   );
 };
@@ -157,7 +159,7 @@ const ServicesScreen = () => {
               marginTop="mt32"
             ></ServiceLink>
           </div>
-          <div className="services">
+          <div className="services mt64">
             <ServicePrice
               marginTop="mt64"
               marginBottom=""
@@ -180,7 +182,7 @@ const ServicesScreen = () => {
               servicePrice="50.000тг / тонна"
             ></ServicePrice>
           </div>
-          <div className="discount-container">
+          <div className="discount-container mt64">
             <span className="discount-text">
               При покупке всех услуг действует скидка в x%,
             </span>

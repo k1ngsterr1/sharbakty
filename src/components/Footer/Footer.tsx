@@ -44,8 +44,8 @@ const Footer = () => {
               Контакты
             </ScrollLink>
           </nav>
-          <a href="mailto: info@example.com" className="mail-link">
-            info@example.com
+          <a href="mailto: info@shbt.kz" className="mail-link">
+            info@shbt.kz
           </a>
         </div>
         <figure className="separator-linez mt16"></figure>

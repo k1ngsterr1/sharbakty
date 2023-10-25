@@ -17,7 +17,7 @@ interface FormProps {
 export const Button: React.FC<ButtonProps> = ({ text, scroll, marginTop }) => {
   return (
     <div className={`btn-container ${marginTop}`}>
-      <ScrollLink to={scroll} className="btn">
+      <ScrollLink to={scroll} className="btn" smooth={true}>
         {text}
       </ScrollLink>
       <figure className="pseudo"></figure>

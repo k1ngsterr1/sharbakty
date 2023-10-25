@@ -37,27 +37,41 @@
 }
 
 .service-card {
-  width: 100%;
+  width: auto;
   height: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.service-card .service-img {
+  width: clamp(172.5px, 80.6058vw, 690px);
+  height: clamp(208px, 97.19424vw, 832px);
+}
+.service-card .service-price-container {
+  width: auto;
+  display: inline-flex;
+  flex-direction: column;
   align-items: flex-start;
 }
-.service-card .service-card-name {
+.service-card .service-price-container .service-card-name {
   color: #FFF;
   text-align: center;
   font-family: Vollkorn;
   font-size: clamp(14px, 6.54192vw, 56px);
   font-style: normal;
   font-weight: 400;
+  text-align: left !important;
+  float: left !important;
   line-height: normal;
 }
-.service-card .price {
+.service-card .service-price-container .price {
   color: white;
   font-family: Vollkorn;
   font-size: clamp(11px, 5.14008vw, 44px);
   font-style: normal;
   font-weight: 400;
+  text-align: left !important;
+  float: left !important;
   line-height: normal;
 }
 

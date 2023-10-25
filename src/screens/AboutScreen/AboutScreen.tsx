@@ -46,7 +46,7 @@ const AboutScreen = () => {
             <Fade direction="left" triggerOnce={true} delay={300}>
               <Button
                 text="Связаться с нами"
-                scroll="contacts"
+                scroll="contact"
                 marginTop="mt64"
               ></Button>
             </Fade>

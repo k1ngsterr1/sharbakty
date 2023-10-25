@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { FormButton, Button } from "../Button/Button";
 import Select from "react-select";
+import Popup from "reactjs-popup";
+import emailjs from "@emailjs/browser";
 
 import "./styles/form.css";
 
@@ -14,12 +16,35 @@ const Form = () => {
   const [fullName, setFullName] = useState("");
   const [phone, setPhone] = useState("");
   const [service, setService] = useState("");
+  const [isOpen, setOpen] = useState(false);
+
+  const closeModal = () => setOpen(false);
 
   const options = [
     { value: "Хранение + Приемка", label: "Хранение + Приемка" },
     { value: "Хранение + Сушка", label: "Хранение + Сушка" },
     { value: "Сушка + Приемка", label: "Сушка + Приемка" },
   ];
+
+  function sendEmail(e: any) {
+    e.preventDefault();
+    setFullName("");
+    setPhone("");
+    setService("");
+    setOpen((o) => !o);
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID!,
+        process.env.REACT_APP_TEMPLATE_ID!,
+        e.target,
+        process.env.REACT_APP_EMAILJS_KEY!
+      )
+      .then((res) => {
+        console.log("SUCCESS");
+      })
+      .catch((err) => console.log(err));
+  }
 
   const customStyles = {
     control: (provided: any, state: any) => ({
@@ -54,30 +79,42 @@ const Form = () => {
   };
 
   return (
-    <form className="form">
+    <form className="form ">
       <div className="form-mobile-content">
         <input
           type="text"
           className="form-input"
-          name="name_value"
+          name="fullName"
           id="name"
           placeholder="Ваше Имя"
           required={true}
+          onChange={(event) => setFullName(event.target.value)}
         />
         <input
           type="text"
           className="form-input mt32"
-          name="name_value"
+          name="phoneNumber"
           id="name"
           placeholder="Ваш Телефон"
           required={true}
+          onChange={(event) => setPhone(event.target.value)}
         />
         <Select
           options={options}
+          required={true}
+          onChange={(selectedOption) => {
+            if (selectedOption && "value" in selectedOption) {
+              setService(selectedOption.value);
+            } else {
+              setService("");
+            }
+          }}
+          value={options.find((opt) => opt.value === service) || null}
           placeholder="Выберите услугу"
+          name="selectedOption"
           className="select-styles mt32"
           styles={customStyles}
-        ></Select>
+        />
         <div className="btn-center">
           <FormButton text="Отправить" marginTop="mt32"></FormButton>
         </div>
@@ -116,11 +153,11 @@ const Form = () => {
           Свяжитесь с Нами и Вместе Достигнем Успеха! В Шербакты Бидай мы всегда
           открыты для общения и сотрудничества
         </p>
-        <a href="tel:+77759932587" className="link mt32">
-          +7 (775) 993 25-87
+        <a href="tel:+77772922262" className="link mt32">
+          +7 777 292 22 62
         </a>
-        <a href="mailto:info@example.com" className="link mt16">
-          info@example.com
+        <a href="mailto:info@shbt.kz" className="link mt16">
+          info@shbt.kz
         </a>
       </div>
       <div className="pc-contacts">
@@ -130,11 +167,11 @@ const Form = () => {
           Свяжитесь с Нами и Вместе Достигнем Успеха! В Шербакты Бидай мы всегда
           открыты для общения и сотрудничества
         </p>
-        <a href="tel:+77759932587" className="link mt32">
-          +7 (775) 993 25-87
+        <a href="tel:+77772922262" className="link mt32">
+          +7 777 292 22 62
         </a>
-        <a href="mailto:info@example.com" className="link mt16">
-          info@example.com
+        <a href="mailto:info@shbt.kz" className="link mt16">
+          info@shbt.kz
         </a>
       </div>
     </form>

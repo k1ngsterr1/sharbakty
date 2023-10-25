@@ -36,28 +36,43 @@
         font-size: clamp(12px,5.60736vw,48px)
 
 .service-card
-    width: 100%
+    width: auto
     height: auto
     display: flex
     flex-direction: column
-    align-items: flex-start
+    align-items: center
 
-    .service-card-name
-        color: #FFF
-        text-align: center
-        font-family: Vollkorn
-        font-size: $font28mob
-        font-style: normal
-        font-weight: 400
-        line-height: normal
+    .service-img
+        width: clamp(172.5px,80.6058vw,690px)
+        height: clamp(208px,97.19424vw,832px)
 
-    .price
-        color: $white
-        font-family: Vollkorn
-        font-size: $font22mob
-        font-style: normal
-        font-weight: 400
-        line-height: normal
+    .service-price-container
+        width: auto
+        display: inline-flex
+        flex-direction: column
+        align-items: flex-start
+        // margin-left: $m32mob
+
+        .service-card-name
+            color: #FFF
+            text-align: center
+            font-family: Vollkorn
+            font-size: $font28mob
+            font-style: normal
+            font-weight: 400
+            text-align: left !important
+            float: left !important
+            line-height: normal
+
+        .price
+            color: $white
+            font-family: Vollkorn
+            font-size: $font22mob
+            font-style: normal
+            font-weight: 400
+            text-align: left !important
+            float: left !important
+            line-height: normal
 
 .links
     width: 100%
