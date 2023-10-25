@@ -1,0 +1,121 @@
+@import "../../../styles/variables"
+
+.modal-window
+    // position: absolute
+    width: clamp(183px,85.51223999999999vw,732px)
+    height: auto
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    background-color: $white
+    border-radius: clamp(9px,4.20552vw,36px)
+
+    .modal-window-content
+        width: 90%
+        height: auto
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: $m64mob
+        margin-bottom: $m64mob
+
+        .wheat-icon
+            width: $m32mob
+            height: clamp(40px,18.6912vw,160px)
+
+        .modal-text
+            color: $blue
+            text-align: center
+            font-family: Vollkorn
+            font-size: $m32mob
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+            margin-top: $m32mob
+
+        .paragraph-text
+            color: $blue
+            text-align: center
+            font-family: Open Sans
+            font-size: clamp(9.5px,4.439159999999999vw,38px)
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            margin-top: $m16mob
+
+        .modal-btn
+            width: clamp(120px,56.0736vw,480px)
+            height: clamp(25px,11.681999999999999vw,100px)
+            color: #FFF
+            font-family: Vollkorn
+            font-size: $font17mob
+            font-style: normal
+            font-weight: 600
+            line-height: normal
+            background-color: $blue
+            margin-top: $m32mob
+            border: none
+            outline: none
+
+@media screen and  (min-width: 1024px)
+
+    .modal-window
+        width: clamp(388.5px,40.46616vw,1554px)
+        height: auto
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        background-color: $white
+        border-radius: clamp(9px,0.93744vw,36px)
+
+        .modal-window-content
+            width: 90%
+            height: auto
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-top: $m64
+            margin-bottom: $m64
+
+            .wheat-icon
+                width: $m32mob
+                height: clamp(40px,4.1664vw,160px)
+            .modal-text
+                color: $blue
+                text-align: center
+                font-family: Vollkorn
+                font-size: $m32
+                font-style: normal
+                font-weight: 500
+                line-height: normal
+                margin-top: $m32
+
+            .paragraph-text
+                color: $blue
+                text-align: center
+                font-family: Open Sans
+                font-size: clamp(9.5px,0.9895200000000001vw,38px)
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+                margin-top: $m16
+
+            .modal-btn
+                width: clamp(120px,12.4992vw,480px)
+                height: clamp(25px,2.604vw,100px)
+                color: #FFF
+                font-family: Vollkorn
+                font-size: clamp(8.5px,0.88536vw,34px)
+                font-style: normal
+                font-weight: 600
+                line-height: normal
+                background-color: $blue
+                margin-top: $m32
+                border: none
+                outline: none
+                cursor: pointer
+                transition: 0.3s all
+                &:hover
+                    background-color: $orange

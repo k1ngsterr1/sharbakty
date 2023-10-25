@@ -5,6 +5,7 @@ import Popup from "reactjs-popup";
 import emailjs from "@emailjs/browser";
 
 import "./styles/form.css";
+import ThanksPopup from "../ThanksPopup/ThanksPopup";
 
 const logo = require("../../assets/logo.svg").default;
 
@@ -81,13 +82,13 @@ const Form = () => {
   };
 
   return (
-    <form className="form" ref={form} onSubmit={sendEmail}>
-      <div className="form-mobile-content">
+    <div className="form">
+      <form className="form-mobile-content" ref={form} onSubmit={sendEmail}>
         <input
           type="text"
           className="form-input"
           name="fullName"
-          id="name"
+          id="fullName"
           placeholder="Ваше Имя"
           required={true}
           onChange={(event) => setFullName(event.target.value)}
@@ -96,7 +97,7 @@ const Form = () => {
           type="text"
           className="form-input mt32"
           name="phoneNumber"
-          id="name"
+          id="phoneNumber"
           placeholder="Ваш Телефон"
           required={true}
           onChange={(event) => setPhone(event.target.value)}
@@ -120,15 +121,15 @@ const Form = () => {
         <div className="btn-center">
           <FormButton text="Отправить" marginTop="mt32"></FormButton>
         </div>
-      </div>
-      <div className="form-pc-content">
+      </form>
+      <form className="form-pc-content" ref={form} onSubmit={sendEmail}>
         <div className="form-row">
           {" "}
           <input
             type="text"
             className="form-input"
             name="fullName"
-            id="name"
+            id="fullName"
             placeholder="Ваше Имя"
             required={true}
             onChange={(event) => setFullName(event.target.value)}
@@ -137,7 +138,7 @@ const Form = () => {
             type="text"
             className="form-input l"
             name="phoneNumber"
-            id="name"
+            id="phoneNumber"
             placeholder="Ваш Телефон"
             required={true}
             onChange={(event) => setPhone(event.target.value)}
@@ -160,7 +161,7 @@ const Form = () => {
           styles={customStyles}
         />
         <FormButton text="Отправить" marginTop="mt64"></FormButton>
-      </div>
+      </form>
       <div className="mob-contacts">
         <img src={logo} alt="logo" className="logo-colorful mt64" />
         <p className="paragraph center mt32">
@@ -188,7 +189,8 @@ const Form = () => {
           info@shbt.kz
         </a>
       </div>
-    </form>
+      <ThanksPopup open={isOpen} closeMenu={() => setOpen(false)} />
+    </div>
   );
 };
 
