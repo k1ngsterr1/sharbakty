@@ -52,7 +52,7 @@ const AboutScreen = () => {
             </Fade>
           </div>
           <Fade direction="right" triggerOnce={true} delay={300}>
-            <img src={aboutPcImage} className="img-pc" alt="image" />
+            <img src={aboutPcImage} className="img-pc-n" alt="image" />
           </Fade>
         </div>
       </div>

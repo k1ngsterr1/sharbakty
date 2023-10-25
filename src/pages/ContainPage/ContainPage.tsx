@@ -3,11 +3,11 @@ import ColorfulHeader from "../../components/ColorfulHeader/ColorfulHeader";
 import Menu from "../../components/Menu/Menu";
 import { Link as ScrollLink } from "react-scroll";
 import { Button } from "../../components/Button/Button";
-
-import "./styles/contain-styles.css";
 import Form from "../../components/Form/Form";
 import Footer from "../../components/Footer/Footer";
 import Separator from "../../components/Separator/Separator";
+
+import "./styles/contain-styles.css";
 
 const service = require("../../assets/service_01_m.webp");
 
@@ -55,23 +55,25 @@ const ContainPage = () => {
       </main>
       <img src={service} className="img-pc mt64" alt="service" />
       <main className="content-pc-service mt300">
-        <div className="fixed-nav">
-          <span className="text">Содержание</span>
-          <div className="nav-links">
-            <ScrollLink to="" className="blue-link mt16">
-              Основная информация
-            </ScrollLink>
-            <ScrollLink to="" className="blue-link mt16">
-              Цены
-            </ScrollLink>
-            <ScrollLink to="" className="blue-link mt16">
-              Заказать услугу
-            </ScrollLink>
+        <div className="fixed-nav-container">
+          <div className="fixed-nav">
+            <span className="text">Содержание</span>
+            <div className="nav-links">
+              <ScrollLink to="about" className="blue-link mt16" smooth>
+                Основная информация
+              </ScrollLink>
+              <ScrollLink to="price" className="blue-link mt16" smooth>
+                Цены
+              </ScrollLink>
+              <ScrollLink to="contacts" className="blue-link mt16" smooth>
+                Заказать услугу
+              </ScrollLink>
+            </div>
           </div>
         </div>
         <div className="service-content">
           <span className="text">Об услуге</span>
-          <div className="service-content-tab">
+          <div className="service-content-tab" id="about">
             <h5 className="heading-third">Приемка зерна</h5>
             <p className="paragraph w60">
               Оптимальное Хранение Зерна с Шербакты Бидай: Наши современные
@@ -87,7 +89,7 @@ const ContainPage = () => {
             </p>
           </div>
           <div className="separator-line mt64"></div>
-          <div className="service-content-tab mt64">
+          <div className="service-content-tab mt64" id="price">
             <h5 className="heading-third">Цены</h5>
             <p className="paragraph w60">
               Оптимальное Хранение Зерна с Шербакты Бидай: Наши современные
@@ -104,7 +106,7 @@ const ContainPage = () => {
           </div>
         </div>
       </main>
-      <div className="content-pc mt128">
+      <div className="content-pc mt128" id="contacts">
         <Separator number="01" />
 
         <Form />

@@ -19,6 +19,9 @@
 .img-pc
     display: none
 
+.content-pc-service
+    display: none
+
 @media screen and  (min-width: 1024px)
 
     .img
@@ -45,8 +48,8 @@
             margin: 0
 
         .fixed-nav
-            margin-top: 0px
-            position: sticky
+            position: sticky !important
+            top: $m32
             display: flex
             flex-direction: column
             border-top: 1px solid $blue

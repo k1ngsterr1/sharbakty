@@ -12,9 +12,16 @@
 .c-header .c-logo {
   width: clamp(42px, 19.62576vw, 168px);
   height: clamp(42px, 19.62576vw, 168px);
+  cursor: pointer;
 }
 .c-header .hamburger-button {
   display: flex;
+}
+.c-header .contact-btn {
+  display: none;
+}
+.c-header .nav {
+  display: none;
 }
 
 @media screen and (min-width: 1024px) {

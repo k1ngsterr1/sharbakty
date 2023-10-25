@@ -23,6 +23,10 @@
   display: none;
 }
 
+.content-pc-service {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   .img {
     display: none;
@@ -48,8 +52,8 @@
     margin: 0;
   }
   .content-pc-service .fixed-nav {
-    margin-top: 0px;
-    position: sticky;
+    position: sticky !important;
+    top: clamp(16px, 1.66656vw, 64px);
     display: flex;
     flex-direction: column;
     border-top: 1px solid #2D3A53;

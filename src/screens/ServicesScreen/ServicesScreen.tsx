@@ -141,19 +141,19 @@ const ServicesScreen = () => {
             <ServiceLink
               number="2"
               linkName="Приемка"
-              url={navigate("/services/acceptance")}
+              url={() => navigate("/services/acceptance")}
               marginTop="mt32"
             ></ServiceLink>
             <ServiceLink
               number="3"
               linkName="Отгрузка"
-              url={navigate("/services/unloading")}
+              url={() => navigate("/services/unloading")}
               marginTop="mt32"
             ></ServiceLink>
             <ServiceLink
               number="4"
               linkName="Сушка"
-              url={navigate("/services/drain")}
+              url={() => navigate("/services/drain")}
               marginTop="mt32"
             ></ServiceLink>
           </div>

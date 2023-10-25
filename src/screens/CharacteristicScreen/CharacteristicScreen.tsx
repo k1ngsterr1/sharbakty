@@ -45,7 +45,11 @@ const CharacteristicScreen = () => {
         <Separator number="02" marginTop="mt32"></Separator>
         <div className="screen-content space-between items-center">
           <Fade direction="left" triggerOnce={true}>
-            <img className="img-pc" src={charPcImg} alt="char-image"></img>
+            <img
+              className="img-pc-n mt64"
+              src={charPcImg}
+              alt="char-image"
+            ></img>
           </Fade>
           <div className="text-content items-end">
             <div className="heading-container mt32">
