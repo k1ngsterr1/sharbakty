@@ -35,6 +35,10 @@
   position: absolute;
 }
 
+.c-btn, .c-btn-container {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   .btn-container {
     position: relative;

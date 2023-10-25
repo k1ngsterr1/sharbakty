@@ -1,7 +1,7 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { FormButton, Button } from "../Button/Button";
+import { YMaps, Map, Placemark } from "react-yandex-maps";
 import Select from "react-select";
-import Popup from "reactjs-popup";
 import emailjs from "@emailjs/browser";
 
 import "./styles/form.css";
@@ -18,10 +18,30 @@ const Form = () => {
   const [phone, setPhone] = useState("");
   const [service, setService] = useState("");
   const [isOpen, setOpen] = useState(false);
+  const [mapLoaded, setMapLoaded] = useState(false);
 
   const form = useRef<HTMLFormElement>(null);
 
-  const closeModal = () => setOpen(false);
+  const mapData = {
+    geometry: [51.386693, 78.292507],
+    zoom: 9,
+  };
+
+  const placeMark1 = {
+    geometry: [51.386693, 78.292507],
+    properties: {
+      hintContent: "Село Шарбакты",
+      balloonContent: "Село Шарбакты",
+    },
+  };
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setMapLoaded(true);
+    }, 2000);
+
+    return () => clearTimeout(timeout);
+  }, []);
 
   const options = [
     { value: "Хранение + Приемка", label: "Хранение + Приемка" },
@@ -171,9 +191,24 @@ const Form = () => {
         <a href="tel:+77772922262" className="link mt32">
           +7 777 292 22 62
         </a>
-        <a href="mailto:info@shbt.kz" className="link mt16">
+        <a href="mailto:info@shbt.kz" className="link mt16 mb32">
           info@shbt.kz
         </a>
+        {mapLoaded && (
+          <YMaps>
+            <Map
+              defaultState={{
+                center: [51.386693, 78.292507],
+                zoom: 15,
+              }}
+              width="90%"
+              height="clamp(150px,76vw, 600px)"
+              marginTop="clamp(16,8vw,64px)"
+            >
+              <Placemark {...placeMark1}></Placemark>
+            </Map>
+          </YMaps>
+        )}
       </div>
       <div className="pc-contacts">
         {" "}
@@ -185,9 +220,24 @@ const Form = () => {
         <a href="tel:+77772922262" className="link mt32">
           +7 777 292 22 62
         </a>
-        <a href="mailto:info@shbt.kz" className="link mt16">
+        <a href="mailto:info@shbt.kz" className="link mt16 mb32">
           info@shbt.kz
         </a>
+        {mapLoaded && (
+          <YMaps>
+            <Map
+              defaultState={{
+                center: [51.386693, 78.292507],
+                zoom: 15,
+              }}
+              width="clamp(196.5px,20.46744vw,786px)"
+              height="clamp(172.5px,17.9676vw,690px)"
+              marginTop="clamp(16,8vw,64px)"
+            >
+              <Placemark {...placeMark1}></Placemark>
+            </Map>
+          </YMaps>
+        )}
       </div>
       <ThanksPopup open={isOpen} closeMenu={() => setOpen(false)} />
     </div>
