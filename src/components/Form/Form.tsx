@@ -18,6 +18,8 @@ const Form = () => {
   const [service, setService] = useState("");
   const [isOpen, setOpen] = useState(false);
 
+  const form = useRef<HTMLFormElement>(null);
+
   const closeModal = () => setOpen(false);
 
   const options = [
@@ -79,7 +81,7 @@ const Form = () => {
   };
 
   return (
-    <form className="form ">
+    <form className="form" ref={form} onSubmit={sendEmail}>
       <div className="form-mobile-content">
         <input
           type="text"
@@ -125,26 +127,38 @@ const Form = () => {
           <input
             type="text"
             className="form-input"
-            name="name_value"
+            name="fullName"
             id="name"
             placeholder="Ваше Имя"
             required={true}
+            onChange={(event) => setFullName(event.target.value)}
           />
           <input
             type="text"
             className="form-input l"
-            name="name_value"
+            name="phoneNumber"
             id="name"
             placeholder="Ваш Телефон"
             required={true}
+            onChange={(event) => setPhone(event.target.value)}
           />
         </div>
         <Select
           options={options}
+          required={true}
+          onChange={(selectedOption) => {
+            if (selectedOption && "value" in selectedOption) {
+              setService(selectedOption.value);
+            } else {
+              setService("");
+            }
+          }}
+          value={options.find((opt) => opt.value === service) || null}
           placeholder="Выберите услугу"
-          className="select-styles mt64"
+          name="selectedOption"
+          className="select-styles mt32"
           styles={customStyles}
-        ></Select>
+        />
         <FormButton text="Отправить" marginTop="mt64"></FormButton>
       </div>
       <div className="mob-contacts">
