@@ -47,9 +47,14 @@ const Menu: React.FC<MenuProps> = ({ isMenuOpen, toggleMenu }) => {
             onClick={navigateToMain}
           />
           <figure className="separator mt32"></figure>
-          <nav className="links">
+          <nav className="links mt16">
             <Fade direction="right" className="">
-              <ScrollLink className="menu-link" to="main" onClick={closeMenu}>
+              <ScrollLink
+                className="menu-link"
+                to="main"
+                onClick={closeMenu}
+                smooth
+              >
                 Главная
               </ScrollLink>
             </Fade>
@@ -58,12 +63,18 @@ const Menu: React.FC<MenuProps> = ({ isMenuOpen, toggleMenu }) => {
                 className="menu-link mt16"
                 to="about"
                 onClick={closeMenu}
+                smooth
               >
                 О нас
               </ScrollLink>
             </Fade>
             <Fade direction="right" delay={300} className="mt16">
-              <ScrollLink className="menu-link " to="char" onClick={closeMenu}>
+              <ScrollLink
+                className="menu-link "
+                to="char"
+                onClick={closeMenu}
+                smooth
+              >
                 Характеристики
               </ScrollLink>
             </Fade>
@@ -72,6 +83,7 @@ const Menu: React.FC<MenuProps> = ({ isMenuOpen, toggleMenu }) => {
                 className="menu-link "
                 to="services"
                 onClick={closeMenu}
+                smooth
               >
                 Услуги
               </ScrollLink>
@@ -81,6 +93,7 @@ const Menu: React.FC<MenuProps> = ({ isMenuOpen, toggleMenu }) => {
                 className="menu-link  send"
                 to="contact"
                 onClick={closeMenu}
+                smooth
               >
                 Отправить заявку
               </ScrollLink>
