@@ -11,6 +11,7 @@ import ContainPage from "./pages/ContainPage/ContainPage";
 import AcceptancePage from "./pages/AcceptancePage/AcceptancePage";
 import UnloadingPage from "./pages/UnloadingPage/UnloadingPage";
 import DrainPage from "./pages/DrainPage/DrainPage";
+import Error from "./pages/Error/Error";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -32,6 +33,8 @@ const App = () => {
         <Route path="/services/acceptance" element={<AcceptancePage />}></Route>
         <Route path="/services/unloading" element={<UnloadingPage />}></Route>
         <Route path="/services/drain" element={<DrainPage />}></Route>
+        <Route path="*" element={<Error />}></Route>
+        {/* <Route path="/error" element={<Error />}></Route> */}
       </Routes>
     </Router>
   );
