@@ -26,7 +26,11 @@ const Form = () => {
   const form = useRef<HTMLFormElement>(null);
 
   function ScrollTop() {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
   }
 
   const MapComponent = () => {
@@ -261,15 +265,15 @@ const Form = () => {
           Казахстан, Павлодарская область, Щербактинский р-н, село Шарбакты, ул.
           Победа, здание 105
         </p>
-        <div className="contact-container">
+        <div className="contact-container mt16">
           <FontAwesomeIcon className="icon" icon={faPhone} />
-          <a href="tel:+77772922262" className="link mt32">
+          <a href="tel:+77772922262" className="link">
             +7 777 292 22 62
           </a>
         </div>
-        <div className="contact-container">
+        <div className="contact-container mt16">
           <FontAwesomeIcon className="icon" icon={faEnvelope} />
-          <a href="mailto:info@shbt.kz" className="link mt16 mb32">
+          <a href="mailto:info@shbt.kz" className="link">
             info@shbt.kz
           </a>
         </div>
