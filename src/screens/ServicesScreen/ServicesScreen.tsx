@@ -79,13 +79,13 @@ const ServicesScreen = () => {
             marginTop="mt32"
           ></ServiceLink> */}
           <ServiceLink
-            number="3"
+            number="2"
             linkName="Отгрузка"
             url={() => navigate("/services/unloading")}
             marginTop="mt32"
           ></ServiceLink>
           <ServiceLink
-            number="4"
+            number="3"
             linkName="Сушка"
             url={() => navigate("/services/drain")}
             marginTop="mt32"
@@ -147,13 +147,13 @@ const ServicesScreen = () => {
               marginTop="mt32"
             ></ServiceLink> */}
             <ServiceLink
-              number="3"
+              number="2"
               linkName="Отгрузка"
               url={() => navigate("/services/unloading")}
               marginTop="mt32"
             ></ServiceLink>
             <ServiceLink
-              number="4"
+              number="3"
               linkName="Сушка"
               url={() => navigate("/services/drain")}
               marginTop="mt32"
