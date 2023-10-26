@@ -217,7 +217,7 @@ const Form = () => {
           <YMaps>
             <Map
               defaultState={{
-                center: [51.386693, 78.292507],
+                center: [52.485575, 78.176394],
                 zoom: 15,
               }}
               width="90%"
