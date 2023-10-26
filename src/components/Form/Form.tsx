@@ -33,30 +33,6 @@ const Form = () => {
     });
   }
 
-  const MapComponent = () => {
-    if (!mapLoaded) return null;
-
-    return (
-      <YMaps>
-        <Map
-          defaultState={{
-            center: [55.965502, 37.920435],
-            zoom: 12,
-          }}
-          width="90%"
-          height="345px"
-        >
-          <Placemark {...placeMark1}></Placemark>
-        </Map>
-      </YMaps>
-    );
-  };
-
-  const mapData = {
-    geometry: [51.386693, 78.292507],
-    zoom: 9,
-  };
-
   const placeMark1 = {
     geometry: [51.386693, 78.292507],
     properties: {
