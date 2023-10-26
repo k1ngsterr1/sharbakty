@@ -22,6 +22,25 @@ const Form = () => {
 
   const form = useRef<HTMLFormElement>(null);
 
+  const MapComponent = () => {
+    if (!mapLoaded) return null;
+
+    return (
+      <YMaps>
+        <Map
+          defaultState={{
+            center: [55.965502, 37.920435],
+            zoom: 12,
+          }}
+          width="90%"
+          height="345px"
+        >
+          <Placemark {...placeMark1}></Placemark>
+        </Map>
+      </YMaps>
+    );
+  };
+
   const mapData = {
     geometry: [51.386693, 78.292507],
     zoom: 9,
@@ -194,21 +213,6 @@ const Form = () => {
         <a href="mailto:info@shbt.kz" className="link mt16 mb32">
           info@shbt.kz
         </a>
-        {mapLoaded && (
-          <YMaps>
-            <Map
-              defaultState={{
-                center: [51.386693, 78.292507],
-                zoom: 15,
-              }}
-              width="90%"
-              height="clamp(150px,76vw, 600px)"
-              marginTop="clamp(16,8vw,64px)"
-            >
-              <Placemark {...placeMark1}></Placemark>
-            </Map>
-          </YMaps>
-        )}
       </div>
       <div className="pc-contacts">
         {" "}
@@ -230,8 +234,8 @@ const Form = () => {
                 center: [51.386693, 78.292507],
                 zoom: 15,
               }}
-              width="clamp(196.5px,20.46744vw,786px)"
-              height="clamp(172.5px,17.9676vw,690px)"
+              width="90%"
+              height="clamp(150px,76vw, 600px)"
               marginTop="clamp(16,8vw,64px)"
             >
               <Placemark {...placeMark1}></Placemark>
