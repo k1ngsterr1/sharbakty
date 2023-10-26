@@ -213,20 +213,6 @@ const Form = () => {
         <a href="mailto:info@shbt.kz" className="link mt16 mb32">
           info@shbt.kz
         </a>
-      </div>
-      <div className="pc-contacts">
-        {" "}
-        <img src={logo} alt="logo" className="logo-colorful mt64" />
-        <p className="paragraph right mt32">
-          Свяжитесь с Нами и Вместе Достигнем Успеха! В Шербакты Бидай мы всегда
-          открыты для общения и сотрудничества
-        </p>
-        <a href="tel:+77772922262" className="link mt32">
-          +7 777 292 22 62
-        </a>
-        <a href="mailto:info@shbt.kz" className="link mt16 mb32">
-          info@shbt.kz
-        </a>
         {mapLoaded && (
           <YMaps>
             <Map
@@ -242,6 +228,20 @@ const Form = () => {
             </Map>
           </YMaps>
         )}
+      </div>
+      <div className="pc-contacts">
+        {" "}
+        <img src={logo} alt="logo" className="logo-colorful mt64" />
+        <p className="paragraph right mt32">
+          Свяжитесь с Нами и Вместе Достигнем Успеха! В Шербакты Бидай мы всегда
+          открыты для общения и сотрудничества
+        </p>
+        <a href="tel:+77772922262" className="link mt32">
+          +7 777 292 22 62
+        </a>
+        <a href="mailto:info@shbt.kz" className="link mt16 mb32">
+          info@shbt.kz
+        </a>
       </div>
       <ThanksPopup open={isOpen} closeMenu={() => setOpen(false)} />
     </div>
