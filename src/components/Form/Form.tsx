@@ -1,11 +1,14 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FormButton, Button } from "../Button/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { YMaps, Map, Placemark } from "react-yandex-maps";
+
 import Select from "react-select";
 import emailjs from "@emailjs/browser";
+import ThanksPopup from "../ThanksPopup/ThanksPopup";
 
 import "./styles/form.css";
-import ThanksPopup from "../ThanksPopup/ThanksPopup";
 
 const logo = require("../../assets/logo.svg").default;
 
@@ -21,6 +24,10 @@ const Form = () => {
   const [mapLoaded, setMapLoaded] = useState(false);
 
   const form = useRef<HTMLFormElement>(null);
+
+  function ScrollTop() {
+    window.scrollTo(0, 0);
+  }
 
   const MapComponent = () => {
     if (!mapLoaded) return null;
@@ -202,17 +209,29 @@ const Form = () => {
         <FormButton text="Отправить" marginTop="mt64"></FormButton>
       </form>
       <div className="mob-contacts">
-        <img src={logo} alt="logo" className="logo-colorful mt64" />
+        <img
+          src={logo}
+          alt="logo"
+          className="logo-colorful mt64"
+          onClick={ScrollTop}
+        />
         <p className="paragraph center mt32">
-          Свяжитесь с Нами и Вместе Достигнем Успеха! В Шербакты Бидай мы всегда
-          открыты для общения и сотрудничества
+          ТОО «Sharbakty Bidai Terminal» БИН: 190740008443 Адрес: Республика
+          Казахстан, Павлодарская область, Щербактинский р-н, село Шарбакты, ул.
+          Победа, здание 105
         </p>
-        <a href="tel:+77772922262" className="link mt32">
-          +7 777 292 22 62
-        </a>
-        <a href="mailto:info@shbt.kz" className="link mt16 mb32">
-          info@shbt.kz
-        </a>
+        <div className="contact-container mt32">
+          <FontAwesomeIcon className="icon" icon={faPhone} />
+          <a href="tel:+77772922262" className="link ">
+            +7 777 292 22 62
+          </a>
+        </div>
+        <div className="contact-container mt32 mb64">
+          <FontAwesomeIcon className="icon" icon={faEnvelope} />
+          <a href="mailto:info@shbt.kz" className="link ">
+            info@shbt.kz
+          </a>
+        </div>
         {mapLoaded && (
           <YMaps>
             <Map
@@ -231,17 +250,29 @@ const Form = () => {
       </div>
       <div className="pc-contacts">
         {" "}
-        <img src={logo} alt="logo" className="logo-colorful mt64" />
+        <img
+          src={logo}
+          alt="logo"
+          className="logo-colorful mt64"
+          onClick={ScrollTop}
+        />
         <p className="paragraph right mt32">
-          Свяжитесь с Нами и Вместе Достигнем Успеха! В Шербакты Бидай мы всегда
-          открыты для общения и сотрудничества
+          ТОО «Sharbakty Bidai Terminal» БИН: 190740008443 Адрес: Республика
+          Казахстан, Павлодарская область, Щербактинский р-н, село Шарбакты, ул.
+          Победа, здание 105
         </p>
-        <a href="tel:+77772922262" className="link mt32">
-          +7 777 292 22 62
-        </a>
-        <a href="mailto:info@shbt.kz" className="link mt16 mb32">
-          info@shbt.kz
-        </a>
+        <div className="contact-container">
+          <FontAwesomeIcon className="icon" icon={faPhone} />
+          <a href="tel:+77772922262" className="link mt32">
+            +7 777 292 22 62
+          </a>
+        </div>
+        <div className="contact-container">
+          <FontAwesomeIcon className="icon" icon={faEnvelope} />
+          <a href="mailto:info@shbt.kz" className="link mt16 mb32">
+            info@shbt.kz
+          </a>
+        </div>
       </div>
       <ThanksPopup open={isOpen} closeMenu={() => setOpen(false)} />
     </div>

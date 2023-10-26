@@ -19,7 +19,7 @@ const MainScreen = () => {
       {isMenuOpen && <Menu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />}
       <div className="main-screen-content">
         <Fade direction="up" triggerOnce={true}>
-          <span className="main-subtext">Sharbakty Bidai Terminal</span>
+          <span className="main-subtext">ТОО «Sharbakty Bidai Terminal»</span>
         </Fade>
         <Fade
           direction="up"
@@ -28,7 +28,7 @@ const MainScreen = () => {
           triggerOnce={true}
         >
           <h1 className="main-heading">
-            Хранение, приемка и отгрузка зерновых культур
+            Хранение, приемка и отгрузка зерновых и масличных культур
           </h1>
         </Fade>
         <Fade
@@ -38,9 +38,10 @@ const MainScreen = () => {
           triggerOnce={true}
         >
           <p className="main-paragraph">
-            В Шербакты Бидай ваше зерно в приоритете. С передовыми методами и
+            В нашей компании Ваше зерно в приоритете. С передовыми методами и
             стандартами качества мы гарантируем оптимальное хранение, сушку и
-            обработку вашего урожая. Ваше доверие — наша ответственность.
+            отгрузку Вашей сельхозпродукции. Ваше доверие — наша
+            ответственность.
           </p>
         </Fade>
         <ScrollLink className="main-btn" to="contact" smooth>

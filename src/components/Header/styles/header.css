@@ -43,7 +43,7 @@
     color: #EB7F38;
   }
   .header .nav .ml32 {
-    margin-left: clamp(16px, 1.66656vw, 64px);
+    margin-left: clamp(32px, 3.33312vw, 128px);
   }
   .header .contact-btn {
     width: clamp(107px, 11.14512vw, 428px);

@@ -57,11 +57,20 @@
   width: clamp(104.5px, 48.83076vw, 418px);
   height: clamp(104.5px, 48.83076vw, 418px);
 }
-.form .mob-contacts .link {
+.form .mob-contacts .contact-container {
+  display: flex;
+  align-items: center;
+}
+.form .mob-contacts .contact-container .icon {
+  color: #EB7F38;
+  font-size: clamp(11px, 5.14008vw, 44px);
+  margin-right: clamp(8px, 3.73824vw, 32px);
+}
+.form .mob-contacts .contact-container .link {
   color: #EB7F38;
   text-align: right;
   font-family: Open Sans;
-  font-size: clamp(9px, 4.20552vw, 36px);
+  font-size: clamp(11px, 5.14008vw, 44px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
