@@ -21,9 +21,19 @@ const LoadingScreen = () => {
     `;
 
   useEffect(() => {
+    // Disable scrolling when component mounts (loading screen is active)
+    document.body.style.overflow = "hidden";
+
     setTimeout(() => {
+      // Re-enable scrolling after 1500ms when loading screen is not active
+      document.body.style.overflow = "auto"; // or 'visible' if you prefer
       setIsLoading(false);
     }, 1500);
+
+    // Cleanup function to ensure overflow is reset if component is unmounted prematurely
+    return () => {
+      document.body.style.overflow = "auto"; // or 'visible' if you prefer
+    };
   }, []);
 
   return (
