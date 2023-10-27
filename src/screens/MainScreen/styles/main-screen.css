@@ -50,7 +50,7 @@
     flex-direction: column;
     align-items: center;
     margin: auto;
-    margin-top: clamp(32px, 14.95296vw, 128px);
+    margin-top: clamp(32px, 3.33312vw, 128px);
   }
   .main-screen .main-screen-content .main-heading {
     margin-top: clamp(4px, 1.86912vw, 16px);

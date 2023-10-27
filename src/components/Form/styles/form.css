@@ -138,7 +138,7 @@
   .form .pc-contacts .contact-container .icon {
     color: #EB7F38;
     font-size: clamp(10px, 1.0416vw, 40px);
-    margin-right: clamp(8px, 3.73824vw, 32px);
+    margin-right: clamp(8px, 0.83328vw, 32px);
   }
   .form .pc-contacts .contact-container .link {
     color: #EB7F38;

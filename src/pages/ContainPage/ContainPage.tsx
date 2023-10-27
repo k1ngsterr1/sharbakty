@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Button } from "../../components/Button/Button";
+import { Helmet } from "react-helmet";
 
 // Components
 import ColorfulHeader from "../../components/ColorfulHeader/ColorfulHeader";
@@ -24,6 +25,22 @@ const ContainPage = () => {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Услуги по хранению зерна - Sharbakty Bidai</title>
+        <meta
+          property="og:title"
+          content="Услуги по хранению зерна - Sharbakty Bidai"
+        ></meta>
+        <meta
+          property="og:description"
+          content="Мы предоставляем современные услуги по хранению зерна, используя высококачественное оборудование и проверенные методы."
+        ></meta>
+        <meta
+          name="description"
+          content="Мы предоставляем современные услуги по хранению зерна, используя высококачественное оборудование и проверенные методы."
+        ></meta>
+      </Helmet>
       <LoadingScreen />
       <section className="screen">
         <ColorfulHeader
