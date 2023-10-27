@@ -104,4 +104,10 @@
     margin-top: clamp(8px, 3.73824vw, 32px);
     margin-bottom: clamp(8px, 3.73824vw, 32px);
   }
+  .spark-logo {
+    width: clamp(100px, 10.416vw, 400px);
+    height: clamp(50px, 5.208vw, 200px);
+    margin: auto;
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=footer-styles.css.map */

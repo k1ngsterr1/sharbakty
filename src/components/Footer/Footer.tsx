@@ -4,6 +4,7 @@ import { Link as ScrollLink } from "react-scroll";
 import "./styles/footer-styles.css";
 
 const white_logo = require("../../assets/white_logo.svg").default;
+const spark_logo = require("../../assets/spark_logo.svg").default;
 
 const Footer = () => {
   function ScrollTop() {
@@ -12,6 +13,10 @@ const Footer = () => {
       left: 0,
       behavior: "smooth",
     });
+  }
+
+  function SparkRedirect() {
+    window.open("https://sparkstudio.kz/", "_blank");
   }
 
   return (
@@ -32,8 +37,16 @@ const Footer = () => {
             Контакты
           </ScrollLink>
         </nav>
-        <figure className="separator-linez mt16"></figure>
-        <span className="all-rights mt16">2023 All right reserved.</span>
+        <figure className="separator-linez mt16" />
+        <span className="all-rights mt16">
+          © ТОО «Sharbakty Bidai Terminal»
+        </span>
+        <img
+          onClick={SparkRedirect}
+          className="spark-logo mt64 mb32"
+          src={spark_logo}
+          alt="spark-logo"
+        />
       </div>
       <div className="content-pc">
         <div className="upper-row mt32">
@@ -65,6 +78,12 @@ const Footer = () => {
         <span className="all-rights mt32">
           © ТОО «Sharbakty Bidai Terminal»
         </span>
+        <img
+          onClick={SparkRedirect}
+          className="spark-logo mt16 mb16"
+          src={spark_logo}
+          alt="spark-logo"
+        />
       </div>
     </footer>
   );
