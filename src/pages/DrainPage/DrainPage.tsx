@@ -65,7 +65,7 @@ const DrainPage = () => {
             <span className="main-subtext-small orange left">
               Sharbakty Bidai Terminal
             </span>
-            <h1 className="main-heading blue mt8 mb16 left">Храние зерна</h1>
+            <h1 className="main-heading blue mt8 mb16 left">Сушка зерна</h1>
             <p className="paragraph blue fw300 left w40">
               Спокойствие для Вашего Зерна с Шербакты Бидай: Обеспечиваем
               стабильные и безопасные условия хранения урожая с контролем
@@ -96,7 +96,7 @@ const DrainPage = () => {
           <div className="service-content">
             <span className="text">Об услуге</span>
             <div className="service-content-tab" id="about">
-              <h5 className="heading-third">Приемка зерна</h5>
+              <h5 className="heading-third">Сушка зерна</h5>
               <p className="paragraph w60">
                 Оптимальное Хранение Зерна с Шербакты Бидай: Наши современные
                 зернохранилища, оснащенные передовыми системами контроля

@@ -4,6 +4,7 @@ import {
   Route,
   Routes,
   useLocation,
+  Navigate,
 } from "react-router-dom";
 
 import Home from "./pages/HomePage/Home";
@@ -28,13 +29,16 @@ const App = () => {
     <Router>
       <ScrollToTop></ScrollToTop>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/services/containing" element={<ContainPage />}></Route>
-        <Route path="/services/acceptance" element={<AcceptancePage />}></Route>
-        <Route path="/services/unloading" element={<UnloadingPage />}></Route>
-        <Route path="/services/drain" element={<DrainPage />}></Route>
-        <Route path="/error" element={<Error />}></Route>
-        <Route path="*" element={<Error />}></Route>
+        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Navigate replace to="/home" />} />
+        <Route path="/index.html" element={<Navigate replace to="/home" />} />
+        <Route path="/index.shtml" element={<Navigate replace to="/home" />} />
+        <Route path="/services/containing" element={<ContainPage />} />
+        <Route path="/services/acceptance" element={<AcceptancePage />} />
+        <Route path="/services/unloading" element={<UnloadingPage />} />
+        <Route path="/services/drain" element={<DrainPage />} />
+        <Route path="/error" element={<Error />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </Router>
   );

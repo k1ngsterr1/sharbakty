@@ -96,7 +96,7 @@ const UnloadingPage = () => {
           <div className="service-content">
             <span className="text">Об услуге</span>
             <div className="service-content-tab" id="about">
-              <h5 className="heading-third">Приемка зерна</h5>
+              <h5 className="heading-third">Отгрузка зерна</h5>
               <p className="paragraph w60">
                 Оптимальное Хранение Зерна с Шербакты Бидай: Наши современные
                 зернохранилища, оснащенные передовыми системами контроля
@@ -138,7 +138,7 @@ const UnloadingPage = () => {
         <div className="content mt32 ">
           <figure className="separator bg-blue"></figure>
           <span className="about-text">Об услуге</span>
-          <h3 className="heading-t mt32">Приемка зерна</h3>
+          <h3 className="heading-t mt32">Отгрузка зерна</h3>
           <p className="paragraph  mb32">
             Оптимальное Хранение Зерна с Шербакты Бидай: Наши современные
             зернохранилища, оснащенные передовыми системами контроля климата,

@@ -97,7 +97,7 @@ const ContainPage = () => {
           <div className="service-content">
             <span className="text">Об услуге</span>
             <div className="service-content-tab" id="about">
-              <h5 className="heading-third">Приемка зерна</h5>
+              <h5 className="heading-third">Хранение зерна</h5>
               <p className="paragraph w60">
                 Оптимальное Хранение Зерна с Шербакты Бидай: Наши современные
                 зернохранилища, оснащенные передовыми системами контроля

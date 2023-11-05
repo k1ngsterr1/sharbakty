@@ -27,7 +27,7 @@ const Menu: React.FC<MenuProps> = ({ isMenuOpen, toggleMenu }) => {
   };
 
   function navigateToMain() {
-    navigate("/");
+    navigate("/home");
     if (isMenuOpen) {
       toggleMenu();
     }

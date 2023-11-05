@@ -1,5 +1,6 @@
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
+import { useNavigate } from "react-router-dom";
 
 import "./styles/footer-styles.css";
 
@@ -7,6 +8,8 @@ const white_logo = require("../../assets/white_logo.svg").default;
 const spark_logo = require("../../assets/spark_logo.svg").default;
 
 const Footer = () => {
+  const navigate = useNavigate();
+
   function ScrollTop() {
     window.scrollTo({
       top: 0,
@@ -19,10 +22,19 @@ const Footer = () => {
     window.open("https://sparkstudio.kz/", "_blank");
   }
 
+  function navigateToMain() {
+    navigate("/home");
+  }
+
   return (
     <footer className="footer mt64">
       <div className="content center">
-        <img src={white_logo} className="white-logo mt64" alt="white-logo" />
+        <img
+          src={white_logo}
+          className="white-logo mt64"
+          alt="white-logo"
+          onClick={ScrollTop}
+        />
         <nav className="links mt16">
           <ScrollLink className="nav-link mt16" to="main">
             Главная

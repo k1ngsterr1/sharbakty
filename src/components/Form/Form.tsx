@@ -34,10 +34,10 @@ const Form = () => {
   }
 
   const placeMark1 = {
-    geometry: [51.386693, 78.292507],
+    geometry: [52.485479, 78.174759],
     properties: {
-      hintContent: "Село Шарбакты",
-      balloonContent: "Село Шарбакты",
+      hintContent: "Sharbakty Bidai Terminal",
+      balloonContent: "Sharbakty Bidai Terminal",
     },
   };
 
@@ -70,7 +70,9 @@ const Form = () => {
         process.env.REACT_APP_EMAILJS_KEY!
       )
       .then((res) => {
-        console.log("SUCCESS");
+        setFullName("");
+        setPhone("");
+        setService("");
       })
       .catch((err) => console.log(err));
   }
@@ -116,6 +118,7 @@ const Form = () => {
           name="fullName"
           id="fullName"
           placeholder="Ваше Имя"
+          value={fullName}
           required={true}
           onChange={(event) => setFullName(event.target.value)}
         />
@@ -125,6 +128,7 @@ const Form = () => {
           name="phoneNumber"
           id="phoneNumber"
           placeholder="Ваш Телефон"
+          value={phone}
           required={true}
           onChange={(event) => setPhone(event.target.value)}
         />
@@ -157,6 +161,7 @@ const Form = () => {
             name="fullName"
             id="fullName"
             placeholder="Ваше Имя"
+            value={fullName}
             required={true}
             onChange={(event) => setFullName(event.target.value)}
           />
@@ -166,6 +171,7 @@ const Form = () => {
             name="phoneNumber"
             id="phoneNumber"
             placeholder="Ваш Телефон"
+            value={phone}
             required={true}
             onChange={(event) => setPhone(event.target.value)}
           />
@@ -196,9 +202,9 @@ const Form = () => {
           onClick={ScrollTop}
         />
         <p className="paragraph center mt32">
-          ТОО «Sharbakty Bidai Terminal» БИН: 190740008443 Адрес: Республика
-          Казахстан, Павлодарская область, Щербактинский р-н, село Шарбакты, ул.
-          Победа, здание 105
+          ТОО «Sharbakty Bidai Terminal» БИН: 190740008443 <br /> <br /> Адрес:
+          Республика Казахстан, Павлодарская область, <br /> <br />{" "}
+          Щербактинский р-н, село Шарбакты, ул. Победа, здание 105
         </p>
         <div className="contact-container mt32">
           <FontAwesomeIcon className="icon" icon={faPhone} />
@@ -216,8 +222,8 @@ const Form = () => {
           <YMaps>
             <Map
               defaultState={{
-                center: [52.485575, 78.176394],
-                zoom: 15,
+                center: [52.485479, 78.174759],
+                zoom: 16,
               }}
               width="90%"
               height="clamp(150px,76vw, 600px)"
@@ -237,9 +243,9 @@ const Form = () => {
           onClick={ScrollTop}
         />
         <p className="paragraph right mt32">
-          ТОО «Sharbakty Bidai Terminal» БИН: 190740008443 Адрес: Республика
-          Казахстан, Павлодарская область, Щербактинский р-н, село Шарбакты, ул.
-          Победа, здание 105
+          ТОО «Sharbakty Bidai Terminal» БИН: 190740008443 <br /> <br /> Адрес:
+          Республика Казахстан, Павлодарская область, Щербактинский р-н, село
+          Шарбакты, ул. Победа, здание 105
         </p>
         <div className="contact-container mt16">
           <FontAwesomeIcon className="icon" icon={faPhone} />
