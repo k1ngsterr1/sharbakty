@@ -158,6 +158,8 @@
 .white
     color: $white !important
 
+
+
 .bg-blue
     background-color: $blue !important
 
@@ -194,6 +196,13 @@
     display: flex
     flex-direction: column
     margin: auto
+
+.column
+    width: 58%
+    flex-direction: column
+
+.big-text
+    font-size: clamp(11.5px,5.37372vw,46px) !important
 
 .heading-s
     color: $blue
@@ -275,6 +284,9 @@
     width: 100% !important
 
 @media screen and  (min-width: 1024px)
+
+    .big-text
+       font-size: clamp(11.5px,1.19784vw,46px) !important
 
     .loader
         width: 100%

@@ -27,10 +27,12 @@ const ContainPage = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Услуги по хранению зерна - Sharbakty Bidai</title>
+        <title>
+          Услуги по сушке зерновых и масличных культур - Sharbakty Bidai
+        </title>
         <meta
           property="og:title"
-          content="Услуги по хранению зерна - Sharbakty Bidai"
+          content="Услуги по сушке зерновых и масличных культур - Sharbakty Bidai"
         ></meta>
         <meta
           property="og:description"
@@ -50,7 +52,9 @@ const ContainPage = () => {
         {isMenuOpen && <Menu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />}
         <main className="content mt64">
           <span className="main-subtext orange">Sharbakty Bidai Terminal</span>
-          <h1 className="main-heading blue mt8 mb16">Храние зерна</h1>
+          <h1 className="main-heading blue mt8 mb16 w40">
+            Услуги по сушке зерновых и масличных культур - Sharbakty Bidai
+          </h1>
           <p className="paragraph blue fw300 center m-auto ">
             Спокойствие для Вашего Зерна с Шербакты Бидай: Обеспечиваем
             стабильные и безопасные условия хранения урожая с контролем
@@ -66,7 +70,10 @@ const ContainPage = () => {
             <span className="main-subtext-small orange left">
               Sharbakty Bidai Terminal
             </span>
-            <h1 className="main-heading blue mt8 mb16 left">Храние зерна</h1>
+            <h1 className="main-heading blue mt8 mb16 left w40">
+              {" "}
+              Услуги по сушке зерновых и масличных культур
+            </h1>
             <p className="paragraph blue fw300 left w40">
               Спокойствие для Вашего Зерна с Шербакты Бидай: Обеспечиваем
               стабильные и безопасные условия хранения урожая с контролем
