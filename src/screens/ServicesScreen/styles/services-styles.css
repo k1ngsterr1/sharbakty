@@ -177,6 +177,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     border: 1px solid white;
     margin-bottom: clamp(32px, 3.33312vw, 128px);
   }
@@ -185,9 +186,11 @@
     font-family: Vollkorn;
     font-size: clamp(17.5px, 1.8228vw, 70px);
     font-style: normal;
+    text-align: center;
     font-weight: 400;
     line-height: normal;
     margin-top: clamp(16px, 1.66656vw, 64px);
+    margin-bottom: clamp(16px, 1.66656vw, 64px);
   }
   .discount-container .discount-price {
     color: white;

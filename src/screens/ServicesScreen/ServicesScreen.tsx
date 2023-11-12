@@ -97,21 +97,21 @@ const ServicesScreen = () => {
             marginBottom=""
             imageSrc={service01}
             serviceName="Хранение + Приемка"
-            servicePrice="50.000тг / тонна"
+            servicePrice="900тг / тонна"
           ></ServicePrice>
           <ServicePrice
             marginTop="mt64"
             marginBottom=""
             imageSrc={service02}
             serviceName="Сушка + Приемка"
-            servicePrice="50.000тг / тонна"
+            servicePrice="10.000тг / тонна"
           ></ServicePrice>
           <ServicePrice
             marginTop="mt64"
             marginBottom="mb64"
             imageSrc={service03}
             serviceName="Сушка + Приемка"
-            servicePrice="50.000тг / тонна"
+            servicePrice="2.500тг / тонна"
           ></ServicePrice>
         </div>
       </section>
@@ -165,28 +165,29 @@ const ServicesScreen = () => {
               marginBottom=""
               imageSrc={service01}
               serviceName="Хранение + Приемка"
-              servicePrice="50.000тг / тонна"
+              servicePrice="900тг / тонна"
             ></ServicePrice>
             <ServicePrice
               marginTop="mt64"
               marginBottom=""
               imageSrc={service02}
               serviceName="Сушка + Приемка"
-              servicePrice="50.000тг / тонна"
+              servicePrice="10.000тг / тонна"
             ></ServicePrice>
             <ServicePrice
               marginTop="mt64"
               marginBottom="mb64"
               imageSrc={service03}
               serviceName="Сушка + Приемка"
-              servicePrice="50.000тг / тонна"
+              servicePrice="2.500тг / тонна"
             ></ServicePrice>
           </div>
-          <div className="discount-container mt64">
+          <div className="discount-container mt64 text-center">
             <span className="discount-text">
-              При покупке всех услуг действует скидка в x%,
+              Что при покупке или как правильно сказать при заказе всех услуг
+              действует скидка, расчет индивидуально{" "}
             </span>
-            <span className="discount-price">250.000гт</span>
+            {/* <span className="discount-price">250.000гт</span> */}
           </div>
         </div>
       </section>
