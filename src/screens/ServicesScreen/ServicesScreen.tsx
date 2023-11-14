@@ -97,21 +97,21 @@ const ServicesScreen = () => {
             marginBottom=""
             imageSrc={service01}
             serviceName="Хранение + Приемка"
-            servicePrice="900тг / тонна"
+            servicePrice="От 900тг / тонна"
           ></ServicePrice>
           <ServicePrice
             marginTop="mt64"
             marginBottom=""
             imageSrc={service02}
             serviceName="Сушка + Приемка"
-            servicePrice="10.000тг / тонна"
+            servicePrice="От 10.000тг / тонна"
           ></ServicePrice>
           <ServicePrice
             marginTop="mt64"
             marginBottom="mb64"
             imageSrc={service03}
-            serviceName="Сушка + Приемка"
-            servicePrice="2.500тг / тонна"
+            serviceName="Отгрузка + Приемка"
+            servicePrice="От 2.500тг / тонна"
           ></ServicePrice>
         </div>
       </section>
@@ -165,21 +165,21 @@ const ServicesScreen = () => {
               marginBottom=""
               imageSrc={service01}
               serviceName="Хранение + Приемка"
-              servicePrice="900тг / тонна"
+              servicePrice="От 900тг / тонна"
             ></ServicePrice>
             <ServicePrice
               marginTop="mt64"
               marginBottom=""
               imageSrc={service02}
               serviceName="Сушка + Приемка"
-              servicePrice="10.000тг / тонна"
+              servicePrice="От 10.000тг / тонна"
             ></ServicePrice>
             <ServicePrice
               marginTop="mt64"
               marginBottom="mb64"
               imageSrc={service03}
-              serviceName="Сушка + Приемка"
-              servicePrice="2.500тг / тонна"
+              serviceName="Отгрузка + Приемка"
+              servicePrice="От 2.500тг / тонна"
             ></ServicePrice>
           </div>
           <div className="discount-container mt64 text-center">
