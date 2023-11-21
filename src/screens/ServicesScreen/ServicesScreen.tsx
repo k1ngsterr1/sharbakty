@@ -182,14 +182,6 @@ const ServicesScreen = () => {
               servicePrice="От 2.500тг / тонна"
             ></ServicePrice>
           </div>
-          <div className="discount-container mt64 text-center">
-            <span className="discount-text">
-              При покупке или заказе любых наших услуг вас ожидает эксклюзивная
-              скидка. Каждая скидка рассчитывается индивидуально, учитывая ваши
-              уникальные потребности.
-            </span>
-            {/* <span className="discount-price">250.000гт</span> */}
-          </div>
         </div>
       </section>
     </div>
