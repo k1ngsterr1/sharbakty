@@ -51,8 +51,8 @@ const Form = () => {
 
   const options = [
     { value: "Хранение + Приемка", label: "Хранение + Приемка" },
-    { value: "Хранение + Сушка", label: "Хранение + Сушка" },
     { value: "Сушка + Приемка", label: "Сушка + Приемка" },
+    { value: "Отгрузка + Приемка", label: "Отгрузка + Приемка" },
   ];
 
   function sendEmail(e: any) {
