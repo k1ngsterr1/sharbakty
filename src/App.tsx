@@ -27,7 +27,7 @@ function ScrollToTop() {
 const App = () => {
   return (
     <Router>
-      <ScrollToTop></ScrollToTop>
+      <ScrollToTop />
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/" element={<Navigate replace to="/home" />} />
